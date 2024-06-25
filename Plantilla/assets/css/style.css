@@ -37,6 +37,20 @@ h6 {
   font-family: "Nunito", sans-serif;
 }
 
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: -.125em;
+  -webkit-font-smoothing: antialiased;
+  color: #fff;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .bg-principal{
   background: #4D008B !important;
 }
