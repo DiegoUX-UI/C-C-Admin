@@ -36,11 +36,11 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header top-0  d-flex fixed-top align-items-center shadow-lg">
+  <header id="header" class="header top-0  d-flex fixed-top align-items-center shadow-lg bg-principal">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center ">
-        <img src="assets/img/Logo DTS-black.png" alt="">
+      <a href="index.html" class="logo d-flex align-items-center ps-3">
+        <img src="assets/img/logos/logo-wom.png" alt="Logo wom" width="60px">
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- Fin Logo -->
@@ -66,7 +66,9 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">Rene Puente</span>
+            <span class="d-none d-md-block dropdown-toggle ps-2 profile_name">Alexis Sanchez
+              
+            </span>
           </a><!-- Imagen Perfil -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
@@ -115,61 +117,46 @@
 
   </header><!-- Fin Header -->
 
-  <script>
-    $(document).ready(function() {
-  $('.toggle-sidebar-btn').on('click', function() {
-    $(this).addClass('rotate'); // Agrega la clase 'rotate' al hacer clic
-    
-    // Quita la clase 'rotate' después de 0.5 segundos (ajustable según necesites)
-    setTimeout(() => {
-      $(this).removeClass('rotate');
-    }, 500);
-  });
-});
-
-
-  </script>
-
   <aside class="sidebar close">
-    <div class="logo-details">
+    <!-- <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i>
       <span class="logo_name">CodingLab</span>
-    </div>
+    </div> -->
     <ul class="nav-links">
       <li>
-        <a href="#">
+        <a href="#" class="active">
           <i class='bx bx-grid-alt'></i>
           <span class="link_name">Dashboard</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Category</a></li>
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
         </ul>
       </li>
       <li>
-        <div class="iocn-link">
+        <div class="iocn-link d-flex justify-content-between">
           <a href="#">
             <i class='bx bx-collection'></i>
-            <span class="link_name">Category</span>
+            <span class="link_name">Operaciones</span>
           </a>
           <i class='bx bxs-chevron-down arrow'></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
+          <li><a class="link_name" href="#">Operaciones</a></li>
+          <li><a href="#">Pagina</a></li>
+          <li><a href="#">Pagina</a></li>
+          <li><a href="#">Pagina</a></li>
         </ul>
       </li>
       <li>
         <div class="iocn-link">
           <a href="#">
             <i class='bx bx-book-alt'></i>
-            <span class="link_name">Posts</span>
+            <span class="link_name">Locker</span>
           </a>
           <i class='bx bxs-chevron-down arrow'></i>
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a class="link_name" href="#">Lockers</a></li>
           <li><a href="#">Web Design</a></li>
           <li><a href="#">Login Form</a></li>
           <li><a href="#">Card Design</a></li>
@@ -178,19 +165,19 @@
       <li>
         <a href="#">
           <i class='bx bx-pie-chart-alt-2'></i>
-          <span class="link_name">Analytics</span>
+          <span class="link_name">Estadísticas</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Analytics</a></li>
+          <li><a class="link_name" href="#">Estadísticas</a></li>
         </ul>
       </li>
       <li>
         <a href="#">
           <i class='bx bx-line-chart'></i>
-          <span class="link_name">Chart</span>
+          <span class="link_name">Multimedia</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Chart</a></li>
+          <li><a class="link_name" href="#">Multimedia</a></li>
         </ul>
       </li>
       <li>
@@ -238,13 +225,13 @@
       <li>
         <div class="profile-details">
           <div class="profile-content">
-            <img src="image/profile.jpg" alt="profileImg">
+            <img src="../Plantilla/assets/img/profile-img.jpg" alt="profileImg" >
           </div>
           <div class="name-job">
-            <div class="profile_name">Prem Shahi</div>
-            <div class="job">Web Desginer</div>
+            <div class="profile_name">Alexis Sanchez</div>
+            <div class="job opacity-50">Diseñador Web</div>
           </div>
-          <i class='bx bx-log-out'></i>
+          <i class='bx bx-log-out c-sesion'></i>
         </div>
       </li>
     </ul>
@@ -252,16 +239,7 @@
 
   <section class="home-section" id="home-section">
     <div class="home-content">
-      <div class="pagetitle">
-        <h1>Form Editors</h1>
-        <nav>
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li class="breadcrumb-item">Forms</li>
-            <li class="breadcrumb-item active">Editors</li>
-          </ol>
-        </nav>
-      </div><!-- End Page Title -->
+      
     </div>
   </section>
 

@@ -38,7 +38,7 @@ h6 {
 }
 
 .bg-principal{
-  background: #4D008B;
+  background: #4D008B !important;
 }
 /*--------------------------------------------------------------
 # Header
@@ -80,8 +80,10 @@ h6 {
   font-size: 32px;
   padding-left: 10px;
   cursor: pointer;
-  color: #012970;
+  color: #ffffff;
 }
+
+
 
 
 .header .search-bar {
@@ -164,7 +166,7 @@ h6 {
 }
 
 .header-nav .nav-profile {
-  color: #012970;
+  color: #ffffff;
 }
 
 .header-nav .nav-profile img {
@@ -289,18 +291,26 @@ h6 {
 --------------------------------------------------------------*/
 .sidebar{
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   height: 100%;
   width: 260px;
-  background: #ffffff;
+  background:url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85%  #fffeff ;
+  background-size: 320px;
+  background-position: calc(100% - 0px) 90%;
   z-index: 100;
   transition: all 0.1s ease;
   margin-top: 60px;
 }
+
 .sidebar.close{
   width: 78px;
+  background:url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85%  #fffeff ;
+  background-size: 320px;
+  background-position: calc(62% - 0px) 90%;
 }
+
+/* Logo Sidebar */
 .sidebar .logo-details{
   height: 60px;
   width: 100%;
@@ -309,7 +319,7 @@ h6 {
 }
 .sidebar .logo-details i{
   font-size: 30px;
-  color: #393cd8;
+  color: #fff;
   height: 50px;
   min-width: 78px;
   text-align: center;
@@ -317,7 +327,7 @@ h6 {
 }
 .sidebar .logo-details .logo_name{
   font-size: 22px;
-  color: #000000;
+  color: #fff;
   font-weight: 600;
   transition: 0.3s ease;
   transition-delay: 0.1s;
@@ -327,9 +337,12 @@ h6 {
   opacity: 0;
   pointer-events: none;
 }
+/* Fin Logo Sidebar */
+
+
 .sidebar .nav-links{
   height: 100%;
-  padding: 30px 0 150px 0;
+  padding: 10px 0 150px 0;
   overflow: auto;
 }
 .sidebar.close .nav-links{
@@ -341,10 +354,11 @@ h6 {
 .sidebar .nav-links li{
   position: relative;
   list-style: none;
-  transition: all 0.4s ease;
+  transition: all 0.2s ease;
+  padding: 5px 0px;
 }
 .sidebar .nav-links li:hover{
-  background: #1d1b31;
+  background: none;
 }
 .sidebar .nav-links li .iocn-link{
   display: flex;
@@ -359,10 +373,10 @@ h6 {
   min-width: 78px;
   text-align: center;
   line-height: 50px;
-  color: #4c2fc2;
-  font-size: 20px;
+  color: #BFBFBF;
+  font-size: 25px;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 .sidebar .nav-links li.showMenu i.arrow{
   transform: rotate(-180deg);
@@ -376,32 +390,36 @@ h6 {
   text-decoration: none;
 }
 .sidebar .nav-links li a .link_name{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  color: #000000;
-  transition: all 0.1s ease;
+  color: #202224;
+  transition: all 0.2s ease;
 }
 .sidebar.close .nav-links li a .link_name{
   opacity: 0;
   pointer-events: none;
 }
+
+/* Submenu */
 .sidebar .nav-links li .sub-menu{
   padding: 6px 6px 14px 80px;
   margin-top: -10px;
-  background: #1d1b31;
+  background: #ffffff;
   display: none;
+  margin-left: 1px;
 }
 .sidebar .nav-links li.showMenu .sub-menu{
   display: block;
 }
 .sidebar .nav-links li .sub-menu a{
-  color: #010101;
+  color: #202224;
   font-size: 15px;
   padding: 5px 0;
   white-space: nowrap;
   opacity: 0.6;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
 }
+
 .sidebar .nav-links li .sub-menu a:hover{
   opacity: 1;
 }
@@ -427,9 +445,11 @@ h6 {
   display: none;
 }
 .sidebar.close .nav-links li .sub-menu .link_name{
-  font-size: 18px;
+  font-size: 16px;
+  font-weight: 500;
   opacity: 1;
   display: block;
+  color: #7239EA;
 }
 .sidebar .nav-links li .sub-menu.blank{
   opacity: 1;
@@ -442,8 +462,7 @@ h6 {
   top: 50%;
   transform: translateY(-50%);
 }
-
-
+/* Fin Submenu */
 .sidebar .profile-details{
   position: fixed;
   bottom: 0;
@@ -453,7 +472,7 @@ h6 {
   justify-content: space-between;
   background: #1d1b31;
   padding: 12px 0;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 .sidebar.close .profile-details{
   background: none;
@@ -472,7 +491,7 @@ h6 {
   border-radius: 16px;
   margin: 0 14px 0 12px;
   background: #1d1b31;
-  transition: all 0.1s ease;
+  transition: all 0.2s ease;
 }
 .sidebar.close .profile-details img{
   padding: 10px;
@@ -480,7 +499,7 @@ h6 {
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job{
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -492,7 +511,42 @@ h6 {
 .sidebar .profile-details .job{
   font-size: 12px;
 }
+@media (max-width: 420px) {
+  .sidebar.close .nav-links li .sub-menu{
+    display: none;
+  }
+}
 
+.sidebar.close .nav-links li i:hover {
+  background: #7239EA;
+  color: #fff !important;
+  transform: scale(0.80); /* Reducir el tamaño al 90% */
+  transition: transform 0.1s ease; /* Añadir una transición suave */
+  border-radius: 10px;
+}
+
+.sidebar.close .nav-links li i{
+  height: 50px;
+  min-width: 78px;
+  text-align: center;
+  line-height: 50px;
+  color: #BFBFBF;
+  font-size: 25px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.sidebar.close .active{
+  background: #7239EA !important;
+  color: #fff !important;
+  transform: scale(0.80); /* Reducir el tamaño al 90% */
+  transition: transform 0.1s ease; /* Añadir una transición suave */
+  border-radius: 10px;
+}
+
+.sidebar .profile-details .c-sesion{
+  min-width: 50px;
+}
 /*--------------------------------------------------------------
 # Home
 --------------------------------------------------------------*/
