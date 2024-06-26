@@ -327,18 +327,22 @@ for (var i = 0; i < arrow.length; i++) {
     arrowParent.classList.toggle("showMenu");
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  let sidebar = document.querySelector(".sidebar");
-  let sidebarBtn = document.querySelector(".toggle-sidebar-btn");
-
-  // Inicialmente, asegúrate de que el sidebar esté abierto
-  sidebar.classList.remove("close");
-
-  sidebarBtn.addEventListener("click", () => {
-    sidebar.classList.toggle("close");
-  });
+let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".toggle-sidebar-btn");
+console.log(sidebarBtn);
+sidebarBtn.addEventListener("click", () => {
+  sidebar.classList.toggle("close");
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   let sidebar = document.querySelector(".sidebar");
+//   let sidebarBtn = document.querySelector(".toggle-sidebar-btn");
+
+//   sidebar.classList.remove("close");
+
+//   sidebarBtn.addEventListener("click", () => {
+//     sidebar.classList.toggle("close");
+//   });
 
 
 

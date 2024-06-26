@@ -31,12 +31,14 @@
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+
+
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="header top-0  d-flex fixed-top align-items-center shadow-lg bg-principal">
+  <header id="header" class="header top-0  d-flex fixed-top align-items-center  bg-principal shadow-lg">
 
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center ps-3">
@@ -66,15 +68,17 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2 profile_name">Alexis Sanchez
-              
+            <div class="ms-3 d-flex flex-column"><span class="usuario">Nombre Usuario</span><span
+                class="cargo opacity-50">Diseñador Web</span></div>
+            <span class="d-none d-md-block dropdown-toggle ps-2 fw-light">
+
             </span>
           </a><!-- Imagen Perfil -->
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Rene Puente</h6>
-              <span>Admin</span>
+              <h6>Nombre Usuario</h6>
+              <span>Diseñador Web</span>
             </li>
             <li>
               <hr class="dropdown-divider mx-2">
@@ -117,15 +121,16 @@
 
   </header><!-- Fin Header -->
 
+  <!-- ======= Sidebar ======= -->
   <aside class="sidebar close">
     <!-- <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">CodingLab</span>
+      <img src="assets/img/logos/logo-wom 2.svg" alt="">
+      <span class="logo_name">WOM</span>
     </div> -->
     <ul class="nav-links">
       <li class="opciones">
-        <a href="#" class="active">
-          <i class='bx bx-grid-alt'></i>
+        <a href="#">
+          <i class="bi bi-grid"></i>
           <span class="link_name">Dashboard</span>
         </a>
         <ul class="sub-menu blank">
@@ -135,7 +140,7 @@
       <li class="opciones">
         <div class="iocn-link d-flex justify-content-between">
           <a href="#">
-            <i class='bx bx-collection'></i>
+            <i class="bi bi-list-ul"></i>
             <span class="link_name">Operaciones</span>
           </a>
           <i class='bx bxs-chevron-down arrow'></i>
@@ -150,7 +155,7 @@
       <li class="opciones">
         <div class="iocn-link">
           <a href="#">
-            <i class='bx bx-book-alt'></i>
+            <i class="bi bi-building-lock"></i>
             <span class="link_name">Locker</span>
           </a>
           <i class='bx bxs-chevron-down arrow'></i>
@@ -164,7 +169,7 @@
       </li>
       <li class="opciones">
         <a href="#">
-          <i class='bx bx-pie-chart-alt-2'></i>
+          <i class="bi bi-clipboard2-data"></i>
           <span class="link_name">Estadísticas</span>
         </a>
         <ul class="sub-menu blank">
@@ -173,13 +178,14 @@
       </li>
       <li class="opciones">
         <a href="#">
-          <i class='bx bx-line-chart'></i>
+          <i class="bi bi-camera-video"></i>
           <span class="link_name">Multimedia</span>
         </a>
         <ul class="sub-menu blank">
           <li><a class="link_name" href="#">Multimedia</a></li>
         </ul>
       </li>
+      <li class="nav-heading opacity-50">Paginas</li>
       <li class="opciones">
         <div class="iocn-link">
           <a href="#">
@@ -213,6 +219,7 @@
           <li><a class="link_name" href="#">History</a></li>
         </ul>
       </li>
+      <hr class="mx-3">
       <li class="opciones">
         <a href="#">
           <i class='bx bx-cog'></i>
@@ -225,30 +232,143 @@
       <li>
         <div class="profile-details">
           <div class="profile-content">
-            <img src="../Plantilla/assets/img/profile-img.jpg" alt="profileImg" >
+            <img src="../Plantilla/assets/img/profile-img.jpg" alt="profileImg">
           </div>
           <div class="name-job">
-            <div class="profile_name">Alexis Sanchez</div>
+            <div class="profile_name">Nombre Usuario</div>
             <div class="job opacity-50">Diseñador Web</div>
           </div>
           <i class='bx bx-log-out c-sesion'></i>
         </div>
       </li>
     </ul>
-  </aside>
+  </aside><!-- Fin Sidebar -->
 
   <section class="home-section" id="home-section">
-    <div class="home-content">
-      
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="card w-100 bienvenida pb-5">
+          <div class="card-body ">
+            <h5 class="card-title"><span>Bienvenido, </span>Nombre Usuario</h5>
+            <p class="card-text text-white">With supporting text below as a natural lead-in to additional content.</p>
+          </div>
+        </div>
+        <div class="row mb-0 d-flex justify-content-center px-5 m-0">
+          <div class="col-md-3">
+            <div class="card info-card ventas-card card-principal">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Ventas <span>| Hoy</span></h5> -->
+                <div class="d-flex align-items-center espacio">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>145</h6>
+                    <span class="text-success small pt-1 fw-bold">12%</span> <span
+                      class="text-muted small pt-2 ps-1">Aumentado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card info-card ventas-card card-principal">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Ventas <span>| Hoy</span></h5> -->
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>145</h6>
+                    <span class="text-success small pt-1 fw-bold">12%</span> <span
+                      class="text-muted small pt-2 ps-1">Aumentado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card info-card ventas-card card-principal">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Ventas <span>| Hoy</span></h5> -->
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>145</h6>
+                    <span class="text-success small pt-1 fw-bold">12%</span> <span
+                      class="text-muted small pt-2 ps-1">Aumentado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card info-card ventas-card card-principal">
+              <div class="card-body">
+                <!-- <h5 class="card-title">Ventas <span>| Hoy</span></h5> -->
+                <div class="d-flex align-items-center">
+                  <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                    <i class="bi bi-graph-up-arrow"></i>
+                  </div>
+                  <div class="ps-3">
+                    <h6>145</h6>
+                    <span class="text-success small pt-1 fw-bold">12%</span> <span
+                      class="text-muted small pt-2 ps-1">Aumentado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    <div class="row ">
+      <div class="col-md-4">
+        <div class="card w-100" style="max-height: 500px;">
+          <div class="card-body">
+            <h5 class="card-title text-black-50">Estado de Paneles</h5>
+            <!-- Aqui va la linea -->
+            <ul class="list-group">
+              <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-black-50">Estado de Paneles</h5>
+            <!-- Aqui va la linea -->
+            <ul class="list-group">
+              <li class="list-group-item disabled" aria-disabled="true">A disabled item</li>
+              <li class="list-group-item">A second item</li>
+              <li class="list-group-item">A third item</li>
+              <li class="list-group-item">A fourth item</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </section>
 
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer bg-white shadow-lg">
+  <footer id="footer" class="footer bg-white fixed-bottom shadow-lg">
     <div class="copyright">
-      &copy; Copyright <strong><span>DTS Autoservicio</span></strong>. Todos los derechos reservados
+      &copy; Copyright <strong><span>C&C</span></strong>. Todos los derechos reservados
     </div>
   </footer><!-- Fin Footer -->
+
+
+  <script src="https://kit.fontawesome.com/195b4568b4.js" crossorigin="anonymous"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
