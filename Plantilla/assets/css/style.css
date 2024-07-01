@@ -20,6 +20,7 @@ body {
   background-repeat: no-repeat;
   background-size: 420px;
   background-position: calc(100% - 0px) 70%;
+  height: 100vh;
 }
 
 
@@ -309,44 +310,50 @@ h6 {
   left: 0;
   height: 100%;
   width: 260px;
-  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% #fffeff;
+  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% ;
   background-size: 320px;
   background-position: calc(100% - 0px) 98%;
   z-index: 100;
   transition: all 0.1s ease;
   margin-top: 60px;
-  
+  background-color: #FFF;
+
 }
 
 .sidebar.close {
   width: 78px;
-  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% #fffeff;
+  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% ;
   background-size: 320px;
   background-position: calc(62% - 0px) 95%;
+  background-color: #FFF;
 }
 
-/* Logo Sidebar */
-/* .sidebar .logo-details {
+.sidebar .nav-links .item {
+  padding: 6px 14px;
+}
+
+.sidebar .logo-details {
   height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
+  padding: 6px 14px;
 }
 
-.sidebar .logo-details img {
+.sidebar .logo-details i {
   font-size: 30px;
-  color: #000000;
+  color: #202224;
   height: 50px;
-  min-width: 78px;
+  min-width: 50px;
   text-align: center;
   line-height: 50px;
 }
 
 .sidebar .logo-details .logo_name {
   font-size: 22px;
-  color: #4D008B;
+  color: #202224;
   font-weight: 600;
-  transition: 0.1s ease;
+  transition: 0.3s ease;
   transition-delay: 0.1s;
 }
 
@@ -354,14 +361,11 @@ h6 {
   transition-delay: 0s;
   opacity: 0;
   pointer-events: none;
-} */
-
-/* Fin Logo Sidebar */
-
+}
 
 .sidebar .nav-links {
   height: 100%;
-  padding: 10px 0 150px 0;
+  padding: 15px 0 150px 0;
   overflow: auto;
 }
 
@@ -375,14 +379,14 @@ h6 {
 
 .sidebar .nav-links li {
   position: relative;
+  margin: 8px 0;
   list-style: none;
   transition: all 0.1s ease;
-  padding: 5px 0px;
 }
 
-.sidebar .nav-links li:hover {
-  background: none;
-}
+/* .sidebar .nav-links li:hover {
+  background: #1d1b31;
+} */
 
 .sidebar .nav-links li .iocn-link {
   display: flex;
@@ -396,13 +400,17 @@ h6 {
 
 .sidebar .nav-links li i {
   height: 50px;
-  min-width: 78px;
+  min-width: 50px;
   text-align: center;
   line-height: 50px;
-  color: #BFBFBF;
+  color: #202224;
   font-size: 25px;
   cursor: pointer;
   transition: all 0.1s ease;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 12px;
 }
 
 .sidebar .nav-links li.showMenu i.arrow {
@@ -420,10 +428,45 @@ h6 {
 }
 
 .sidebar .nav-links li a .link_name {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #202224;
   transition: all 0.1s ease;
+  font-size: 15px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Hover y color para sidebar */
+
+.sidebar li .iocn-link:hover {
+  background: #7239EA;
+  border-radius: 12px;
+  transform: scale(0.97);
+  transition: transform 0.1s ease;
+}
+
+.sidebar li .iocn-link:hover .links_name,
+.sidebar li .iocn-link:hover i,
+.sidebar li .iocn-link:hover span {
+  transition: all 0.1s ease;
+  color: #FFF;
+}
+
+/* Active */
+
+.sidebar li .iocn-link.active {
+  background: #7239EA;
+  border-radius: 12px;
+  transform: scale(0.98);
+  transition: transform 0.1s ease;
+}
+
+.sidebar li .iocn-link.active .links_name,
+.sidebar li .iocn-link.active i,
+.sidebar li .iocn-link.active span {
+  transition: all 0.1s ease;
+  color: #FFF;
 }
 
 .sidebar.close .nav-links li a .link_name {
@@ -431,13 +474,11 @@ h6 {
   pointer-events: none;
 }
 
-/* Submenu */
 .sidebar .nav-links li .sub-menu {
-  padding: 0px 5px 14px 40px;
-  margin-top: -10px;
-  background: #ffffff;
+  padding: 6px 6px 14px 80px;
+  margin-top: 0px;
+  background: #FFF;
   display: none;
-  margin-left: 1px;
 }
 
 .sidebar .nav-links li.showMenu .sub-menu {
@@ -462,6 +503,7 @@ h6 {
   left: 100%;
   top: -10px;
   margin-top: 0;
+  margin-left: 0px;
   padding: 10px 20px;
   border-radius: 0 6px 6px 0;
   opacity: 0;
@@ -482,11 +524,11 @@ h6 {
 }
 
 .sidebar.close .nav-links li .sub-menu .link_name {
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 18px;
   opacity: 1;
   display: block;
   color: #7239EA;
+  font-weight: 400;
 }
 
 .sidebar .nav-links li .sub-menu.blank {
@@ -502,7 +544,6 @@ h6 {
   transform: translateY(-50%);
 }
 
-/* Fin Submenu */
 .sidebar .profile-details {
   position: fixed;
   bottom: 0;
@@ -510,8 +551,8 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #1C0133;
-  padding: 12px 0;
+  background: #FFF;
+  padding: 4.5px 0;
   transition: all 0.1s ease;
 }
 
@@ -534,7 +575,7 @@ h6 {
   object-fit: cover;
   border-radius: 16px;
   margin: 0 14px 0 12px;
-  background: #1C0133;
+  background: #FFF;
   transition: all 0.1s ease;
 }
 
@@ -544,8 +585,8 @@ h6 {
 
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job {
-  color: #fff;
-  font-size: 16px;
+  color: #202224;
+  font-size: 15px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -560,85 +601,55 @@ h6 {
   font-size: 12px;
 }
 
-@media (max-width: 420px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
-  }
-}
-
-.sidebar.close .nav-links li i:hover {
-  background: #7239EA;
-  color: #fff !important;
-  transform: scale(0.92);
-  transition: transform 0.1s ease;
-  border-radius: 10px;
-}
-
-.sidebar.close .nav-links li i {
-  height: 50px;
-  min-width: 78px;
-  text-align: center;
-  line-height: 50px;
-  font-size: 25px;
-  cursor: pointer;
-  transition: all 0.1s ease;
-}
-
-.sidebar .profile-details .c-sesion {
-  min-width: 50px;
-}
-
-.nav-heading {
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #899bbd;
-  font-weight: 600;
-  margin: 0px 0px 0px 20px;
-}
-
-.sidebar.close .nav-heading {
-  display: none;
-}
-
 /*--------------------------------------------------------------
-# Home
+# Main & Footer
 --------------------------------------------------------------*/
-.home-section {
-  position: relative;
-  height: 100%;
-  left: 200px;
-  width: calc(100% - 200px);
-  transition: all 0.5s ease;
-  margin-top: 60px;
-  padding: 0px 30px;
-  transition: all 0.1s;
-}
-
-.sidebar.close~.home-section {
-  left: 78px;
+.sidebar.close~#main {
+  margin-left: 78px;
   width: calc(100% - 78px);
 }
 
-/* .home-section .home-content{
-  height: 60px;
-  display: flex;
-  align-items: center;
-} */
-.home-section .home-content .bx-menu,
-.home-section .home-content .text {
-  color: #11101d;
-  font-size: 35px;
+
+#main {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  margin-top: 60px;
+  padding: 0px 20px 70px 30px;
+  transition: all 0.1s;
 }
 
-.home-section .home-content .text {
-  font-size: 26px;
-  font-weight: 600;
-}
-
-@media (max-width: 420px) {
-  .sidebar.close .nav-links li .sub-menu {
-    display: none;
+@media (max-width: 1199px) {
+  #main {
+    padding: 0px 20px;
   }
+}
+
+/*--------------------------------------------------------------
+# Footer Estilos
+--------------------------------------------------------------*/
+
+.sidebar.close~#footer {
+  margin-left: 78px;
+  width: calc(100% - 78px);
+}
+
+#footer {
+  margin-left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.1s;
+}
+
+.footer {
+  padding: 20px 20px;
+  font-size: 14px;
+  transition: all 0.3s;
+  border-top: 1px solid #cddfff;
+  z-index: 997;
+}
+
+.footer .copyright {
+  text-align: end;
+  color: #012970;
 }
 
 /*--------------------------------------------------------------
@@ -804,7 +815,7 @@ h6 {
 # Card
 --------------------------------------------------------------*/
 .card {
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   border: none;
   border-radius: 5px;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
@@ -876,17 +887,16 @@ h6 {
 .ventas-card .card-icon {
   color: #4154f1;
   background: #f6f6fe;
+  font-size: 18px;
 }
 
-/* Info Cards */
-.info-card {
-  padding-bottom: 0px;
-  border-left: 4px solid #7239EA;
-
+.ventas-card{
+  /* border-left: 4px solid #7239EA; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .info-card h6 {
-  font-size: 20px;
+  font-size: 16px;
   color: #012970;
   font-weight: 700;
   margin: 0;
@@ -1052,6 +1062,15 @@ h6 {
   background: #ffecdf;
 }
 
+.card-icon{
+  color: #4154f1;
+  background: #f6f6fe;
+}
+
+.info-main{
+  border: ;
+}
+
 /* Activity */
 .dashboard .activity {
   font-size: 14px;
@@ -1176,25 +1195,4 @@ h6 {
 }
 
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-.footer {
-  padding: 20px 0;
-  font-size: 14px;
-  transition: all 0.3s;
-  border-top: 1px solid #cddfff;
-  z-index: 997;
-}
-
-.footer .copyright {
-  text-align: center;
-  color: #012970;
-}
-
-@media (min-width: 1200px) {
-
-  #footer {
-    margin-left: 78px;
-  }
-}
+/* Estilos varios */

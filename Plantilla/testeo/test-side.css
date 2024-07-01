@@ -131,6 +131,8 @@
 .sidebar li .iocn-link:hover {
     background: #7239EA;
     border-radius: 12px;
+    transform: scale(0.98);
+    transition: transform 0.1s ease;
 }
 
 .sidebar .nav-links li a .link_name {

@@ -16,13 +16,14 @@
 </head>
 
 <body>
-    <div class="sidebar close">
-        <div class="logo-details">
+    
+    <aside class="sidebar close">
+        <!-- <div class="logo-details">
             <i class='bx bxl-c-plus-plus'></i>
             <span class="logo_name">CodingLab</span>
-        </div>
+        </div> -->
         <ul class="nav-links">
-            <li class="item">
+            <li class="item d-flex align-items-center justify-content-center">
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-collection'></i>
@@ -37,7 +38,7 @@
                     <li><a href="#">PHP & MySQL</a></li>
                 </ul>
             </li>
-            <li class="item">
+            <li class="item d-flex align-items-center justify-content-center">
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-collection'></i>
@@ -52,7 +53,7 @@
                     <li><a href="#">PHP & MySQL</a></li>
                 </ul>
             </li>
-            <li class="item">
+            <li class="item d-flex align-items-center justify-content-center">
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-book-alt'></i>
@@ -67,7 +68,7 @@
                     <li><a href="#">Card Design</a></li>
                 </ul>
             </li>
-            <li class="item">
+            <li class="item d-flex align-items-center justify-content-center">
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-plug'></i>
@@ -82,7 +83,8 @@
                     <li><a href="#">Box Icons</a></li>
                 </ul>
             </li>
-            <li class="item">
+            <hr class="mx-2">
+            <li class="item d-flex align-items-center justify-content-center">
                 <div class="iocn-link">
                     <a href="#">
                         <i class='bx bx-cog'></i>
@@ -110,11 +112,11 @@
                 </div>
             </li>
         </ul>
-    </div>
+    </aside>
     <section class="home-section">
         <div class="home-content">
             <i class='bx bx-menu' id="btn"></i>
-            <span class="text">Drop Down Sidebar</span>
+            <span class="text">Sidebar</span>
         </div>
     </section>
     <script>
@@ -135,9 +137,9 @@
 
         function menuBtnChange() {
             if (sidebar.classList.contains("open")) {
-                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
             } else {
-                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");//replacing the iocns class
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu");
             }
         }
     </script>
