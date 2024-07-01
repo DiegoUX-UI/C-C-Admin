@@ -574,7 +574,7 @@ h6 {
   width: 52px;
   object-fit: cover;
   border-radius: 16px;
-  margin: 0 14px 0 12px;
+  margin: 0 14px 0 14px;
   background: #FFF;
   transition: all 0.1s ease;
 }
@@ -586,7 +586,7 @@ h6 {
 .sidebar .profile-details .profile_name,
 .sidebar .profile-details .job {
   color: #202224;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 500;
   white-space: nowrap;
 }
@@ -598,7 +598,7 @@ h6 {
 }
 
 .sidebar .profile-details .job {
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -620,7 +620,8 @@ h6 {
 
 @media (max-width: 1199px) {
   #main {
-    padding: 0px 20px;
+      padding: 0px 20px;
+      padding-bottom: 100px;
   }
 }
 
@@ -818,7 +819,7 @@ h6 {
   /* margin-bottom: 30px; */
   border: none;
   border-radius: 5px;
-  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .card-header,
@@ -860,6 +861,8 @@ h6 {
   border-top-right-radius: 0px;
   padding: 0px 10px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-bottom: 90px;
+  max-height: 11rem;
 }
 
 .card-principal {
@@ -903,7 +906,25 @@ h6 {
   padding: 0;
 }
 
+@media (max-width: 768px) { 
+  .card-graficos{
+    margin-bottom: 100px;
+    gap: 20px;
+  }
 
+  .bienvenida{
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+  }
+
+  .paneles-mapa{
+    margin-top: 28rem;
+  }
+ }
+ 
+ .tamano-grafico{
+  min-width: 15vw;
+ }
 
 /*--------------------------------------------------------------
 # Alert
@@ -1195,4 +1216,48 @@ h6 {
 }
 
 
-/* Estilos varios */
+/* Estado de paneles */
+
+.texto-titulo{
+  color: #232D42;
+  font-size: 16px;
+}
+
+.lista-paneles{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-paneles{
+  border: 1px solid whitesmoke;
+  padding: 10px;
+  border-radius: 5px;
+  background: #FAF9F9;
+  margin: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+/* Mapa */
+
+.sin-sincron{
+  margin: 0px 10px;
+}
+
+.titulo-sincro{
+  font-size: 12px;
+}
+
+@media (max-width: 768px) { 
+  .leyenda-mapa{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+ }
+
+
+.apexcharts-legend{
+  margin-top: 20px;
+  
+}
