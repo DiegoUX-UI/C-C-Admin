@@ -524,7 +524,7 @@ h6 {
 }
 
 .sidebar.close .nav-links li .sub-menu .link_name {
-  font-size: 18px;
+  font-size: 15px;
   opacity: 1;
   display: block;
   color: #7239EA;
@@ -614,7 +614,7 @@ h6 {
   margin-left: 260px;
   width: calc(100% - 260px);
   margin-top: 60px;
-  padding: 0px 20px 70px 30px;
+  padding: 0px 20px 90px 30px;
   transition: all 0.1s;
 }
 
@@ -888,9 +888,9 @@ h6 {
 }
 
 .ventas-card .card-icon {
-  color: #4154f1;
-  background: #f6f6fe;
-  font-size: 18px;
+  color: #7239EA;
+  background: #efeafa;
+  font-size: 25px;
 }
 
 .ventas-card{
@@ -1101,10 +1101,6 @@ h6 {
   background: #f6f6fe;
 }
 
-.info-main{
-  border: ;
-}
-
 /* Activity */
 .dashboard .activity {
   font-size: 14px;
@@ -1269,8 +1265,3 @@ h6 {
   }
  }
 
-
-.apexcharts-legend{
-  margin-top: 20px;
-  
-}
