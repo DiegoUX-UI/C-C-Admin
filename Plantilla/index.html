@@ -312,7 +312,7 @@
     <div class="row paneles-mapa">
 
       <!-- Estado Paneles -->
-      <div class="col-md-4 mb-2">
+      <div class="col-sm-12 col-md-4 mb-2 ancho-card">
         <div class="card w-100" style="min-height: 400px;">
           <div class="card-body pt-0">
             <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo">Estado de Paneles</h5>
@@ -338,7 +338,7 @@
       </div>
 
       <!-- Mapa -->
-      <div class="col-md-8 mb-2">
+      <div class="col-sm-12 col-md-8 mb-2 ancho-card">
         <div class="card w-100" style="max-height: 400px;">
           <div class="card-body pb-0">
             <div>
@@ -358,7 +358,9 @@
           </div>
         </div>
       </div>
+    </div>
 
+    <div class="row mt-4">
       <!-- Grafico Distribución de retiros -->
       <div class="col-md-6">
         <div class="card card-reportes">
@@ -439,6 +441,7 @@
 
         </div>
       </div>
+
       <div class="col-md-6">
         <div class="card card-reportes">
 
@@ -450,7 +453,7 @@
             <script>
               // Grafico de lineas
               document.addEventListener("DOMContentLoaded", () => {
-                new ApexCharts(document.querySelector("#reportsChart"), {
+                new ApexCharts(document.querySelector("#lineChart"), {
                   series: [{
                     name: 'Ventas',
                     data: [31, 40, 28, 51, 42, 82, 56],

@@ -919,11 +919,24 @@ h6 {
 
   .paneles-mapa{
     margin-top: 28rem;
+    display: flex;
+    flex-direction: column;
   }
  }
  
  .tamano-grafico{
   min-width: 15vw;
+ }
+
+ @media (max-width: 992px){
+  .paneles-mapa{
+    display: flex;
+    flex-direction: column;
+  }
+  .ancho-card{
+    width: 100%;
+    margin: 30px 0px;
+  }
  }
 
 /*--------------------------------------------------------------
