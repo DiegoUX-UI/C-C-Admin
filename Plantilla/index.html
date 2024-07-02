@@ -313,7 +313,7 @@
 
       <!-- Estado Paneles -->
       <div class="col-sm-12 col-md-4 mb-2 ancho-card">
-        <div class="card w-100" style="min-height: 400px;">
+        <div class="card w-100" style="min-height: 438px;">
           <div class="card-body pt-0">
             <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo">Estado de Paneles</h5>
             <ul class="px-2 list-unstyled mt-4">
@@ -339,12 +339,13 @@
 
       <!-- Mapa -->
       <div class="col-sm-12 col-md-8 mb-2 ancho-card">
-        <div class="card w-100" style="max-height: 400px;">
+        <div class="card w-100" style="min-height: 438px;">
           <div class="card-body pb-0">
             <div>
               <img class="img-fluid" src="assets/img/elementos/Mapa.svg" alt="">
             </div>
-            <div class="p-2 my-2 px-2 d-flex justify-content-center leyenda-mapa">
+            <!-- Leyenda Mapa -->
+            <div class="p-2 my-2 px-2 d-flex justify-content-center leyenda-mapa bg-light rounded ">
               <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
                   src="assets/img/elementos/paneles-rojo.svg" alt=""><span class="opacity-50 titulo-sincro">Sin
                   Sincronización</span></div>
@@ -360,13 +361,14 @@
       </div>
     </div>
 
+    <!-- Graficos -->
     <div class="row mt-4">
       <!-- Grafico Distribución de retiros -->
       <div class="col-md-6">
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
-            <h5 class="card-title pt-0  mb-0 texto-titulo">Distribución de retiros</h5>
+            <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros</h5>
 
             <!-- Column Chart -->
             <div id="columnChart"></div>
@@ -446,7 +448,7 @@
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
-            <h5 class="card-title pt-0  mb-0 texto-titulo">Nombre Grafico</h5>
+            <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-arrow-up pe-2"></i>Nombre Grafico</h5>
             <!-- Line Chart -->
             <div id="lineChart"></div>
 

@@ -42,6 +42,7 @@ h4,
 h5,
 h6 {
   font-family: "Nunito", sans-serif;
+  color: #202224;
 }
 
 
@@ -1264,4 +1265,313 @@ h6 {
     margin: 10px 0px;
   }
  }
+
+ 
+/*--------------------------------------------------------------
+# Estilos Operaciones ******************************************
+--------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------
+# Botones 
+--------------------------------------------------------------*/
+
+.btn-individual{
+  background: #F7F7F7 !important;
+  border: #D0D5DD 1px solid !important;
+  color: #344054 !important;
+  font-size: 12px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+  
+}
+
+.btn-importar{
+  background: #EC2273 !important;
+  border: #D0D5DD 1px solid !important;
+  color: #FFF !important;
+  font-size: 12px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+}
+
+.btn-cancelar{
+  background: #FF5757 !important;
+  border: #D0D5DD 1px solid !important;
+  color: #FFF !important;
+  font-size: 12px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+}
+
+.btn-agregari{
+  background: #0070FF !important;
+  border: #D0D5DD 1px solid !important;
+  color: #FFF !important;
+  font-size: 12px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+}
+
+.btn-exportar{
+  background: #5caa5a !important;
+  border: #D0D5DD 1px solid !important;
+  color: #FFF !important;
+  font-size: 12px;
+  width: max-content;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+}
+
+/* Botones Modal */
+
+.btn-Mindividual{
+  background: #F7F7F7 !important;
+  border: #D0D5DD 1px solid !important;
+  color: #344054 !important;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+  min-width: 100px;
+  
+}
+
+.btn-Magregar{
+  background: #0070FF !important;
+  border: #D0D5DD 1px solid !important;
+  color: #FFF !important;
+  font-size: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  line-height: 1.5rem;
+  min-width: 100px;
+}
+
+
+/* Pantalla pequeña */
+
+@media (max-width: 768px) { 
+  .btn-arriba{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    justify-content: space-around;
+  }
+
+  .titulo-pagina{
+    text-align: left; 
+    align-self: start;
+  }
+
+  .btn-titulo{
+    margin: 10px 0px;
+    display: flex;
+    align-items: stretch !important;
+    justify-content: space-around;
+  }
+ }
+
+
+/*--------------------------------------------------------------
+# Titulo Acordeon Nuevos ingresos
+--------------------------------------------------------------*/
+.titulo-ingresos{
+  font-size: 16px;
+  color: #202224;
+}
+
+/* Pantalla pequeña */
+
+@media (max-width: 768px) { 
+  .header-ingresos{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .btn-header{
+    margin: 10px 0px;
+  }
+
+  .btn-header .btn{
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+
+/*--------------------------------------------------------------
+# Estilos datatable
+--------------------------------------------------------------*/
+
+.datatable-top {
+  background-color: #ffff;
+  color: #000; 
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.datatable-top .datatable-selector:focus,
+.datatable-top .datatable-input:focus {
+  outline: none; 
+}
+
+.datatable-input{
+  border: 1px solid #ccc !important; 
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.datatable-selector{
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  padding-right: 0;
+}
+.datatable-dropdown label{
+  font-size: 16px;
+  font-weight: 400;
+  text-wrap: wrap;
+}
+
+.datatable-search-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.datatable-input {
+  width: 100%;
+  font-size: 16px;
+}
+
+/* .datatable-input {
+  width: 100%;
+  padding-left: 30px; 
+  font-size: 16px;
+}
+
+.search-icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  color: #aaa; 
+} */
+
+.datatable-info{
+  color: #ababab;
+  font-size: 12px;
+}
+
+.datatable-table th button, .datatable-pagination-list button {
+  font-size: 15px;
+  color: #202224;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------------------
+# Estilos Tabla
+--------------------------------------------------------------*/
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+  --bs-table-bg-type: #FAFAFA;
+}
+
+.table tr{
+  font-size: 14px;
+}
+
+/* Estados */
+.bg-entregado {
+  color: #037847 !important;
+  background: #ECFDF3 !important;
+}
+.bg-pendiente {
+  color: #364254;
+  background: #F2F4F7 !important;
+}
+
+
+/*--------------------------------------------------------------
+# Lista Operaciones 
+--------------------------------------------------------------*/
+
+/* Filtro */
+
+.titulo-filtro{
+  color: #202224;
+  font-size: 16px;
+}
+
+.form-label {
+  margin-bottom: .5rem;
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.form-select{
+  color: rgba(0, 0, 0, .5) !important;
+}
+
+.form-control{
+  color: rgba(0, 0, 0, .5) !important;
+}
+
+
+
+/* Pantalla pequeña */
+
+@media (max-width: 768px) {
+  .header-listaOP{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+  }
+
+  .btn-listaOP{
+    margin: 10px 0px;
+  }
+  .btn-listaOP .btn{
+    width: 100%;
+    margin: 5px 0px;
+  }
+
+  .datatable-search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .datatable-dropdown label{
+    font-size: 16px;
+    font-weight: 400;
+    text-overflow: ellipsis;
+  }
+
+ }
+
+
+ /*--------------------------------------------------------------
+# Estilo Modal General
+--------------------------------------------------------------*/
+
+.modal-header{
+  background: #4D008B;
+  padding: 10px;
+}
+
+.modal-title{
+  color: #FFF;
+}
+
+
+
+
+
 

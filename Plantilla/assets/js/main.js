@@ -276,7 +276,7 @@
   const datatables = select('.datatable', true)
   datatables.forEach(datatable => {
     new simpleDatatables.DataTable(datatable, {
-      perPageSelect: [5, 10, 15, ["All", -1]],
+      perPageSelect: [5, 10, 15, ["Todos", -1]],
       columns: [{
         select: 2,
         sortSequence: ["desc", "asc"]
@@ -326,6 +326,7 @@ sidebarBtn.addEventListener("click", () => {
   sidebar.classList.toggle("close");
 });
 
+
 // document.addEventListener("DOMContentLoaded", () => {
 //   let sidebar = document.querySelector(".sidebar");
 //   let sidebarBtn = document.querySelector(".toggle-sidebar-btn");
@@ -335,6 +336,72 @@ sidebarBtn.addEventListener("click", () => {
 //   sidebarBtn.addEventListener("click", () => {
 //     sidebar.classList.toggle("close");
 //   });
+
+
+
+
+// ************* Datatable ************* //
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Encuentra el elemento label que contiene el texto
+//   var label = document.querySelector('.datatable-dropdown label');
+
+//   // Cambia el texto
+//   if (label) {
+//       label.innerHTML = label.innerHTML.replace('entries per page', 'Resultados por página');
+//   }
+// });
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Encuentra el input de búsqueda
+//   var searchInput = document.querySelector('.datatable-input');
+
+//   // Cambia el placeholder
+//   if (searchInput) {
+//       searchInput.setAttribute('placeholder', 'Buscar...');
+//   }
+// });
+
+//************* Icono de lupa en Input ************* //
+
+// document.addEventListener('DOMContentLoaded', function() {
+//   // Encuentra el input de búsqueda
+//   var searchInput = document.querySelector('.datatable-input');
+
+//   // Cambia el placeholder y agrega el ícono de lupa
+//   if (searchInput) {
+//       // Cambia el placeholder
+//       searchInput.setAttribute('placeholder', 'Buscar...');
+
+//       // Asegúrate de que el contenedor del input tenga la clase correcta
+//       var searchContainer = searchInput.closest('.datatable-search-container');
+//       if (!searchContainer) {
+//           // Si el contenedor no existe, créalo
+//           searchContainer = document.createElement('div');
+//           searchContainer.classList.add('datatable-search-container');
+//           searchInput.parentNode.insertBefore(searchContainer, searchInput);
+//           searchContainer.appendChild(searchInput);
+//       }
+
+//       // Crea el ícono de lupa si no existe
+//       if (!searchContainer.querySelector('.search-icon')) {
+//           var searchIcon = document.createElement('i');
+//           searchIcon.classList.add('bi', 'bi-search', 'search-icon');
+//           searchContainer.appendChild(searchIcon);
+//       }
+//   }
+// });
+
+
+
+
+
+
+
+
+
+
 
 
 

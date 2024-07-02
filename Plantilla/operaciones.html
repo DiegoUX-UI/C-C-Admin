@@ -129,7 +129,7 @@
     </div> -->
     <ul class="nav-links">
       <li class="item">
-        <div class="iocn-link active">
+        <div class="iocn-link">
           <a href="index.html">
             <i class="bi bi-grid"></i>
             <span class="link_name">Dashboard</span>
@@ -144,7 +144,7 @@
         </ul>
       </li>
       <li class="item ">
-        <div class="iocn-link">
+        <div class="iocn-link active">
           <a href="operaciones.html">
             <i class="bi bi-card-list"></i>
             <span class="link_name">Operaciones</span>
@@ -237,10 +237,298 @@
   <!-- ======= Main ======= -->
   <main id="main" class="main pt-4">
 
-    <div class="paginatitulo">
-      <h4>Operaciones</h4>
+    <div class="paginatitulo d-flex justify-content-between align-items-center btn-arriba">
+      <div class="titulo-pagina">
+        <h4 class="mb-0">Operaciones</h4>
+        <img src="assets/img/elementos/linea-rosada.svg" alt="">
+      </div>
+      <div class="d-flex align-items-center btn-titulo">
+        <a class="btn btn-primary btn-individual me-2" href="" data-bs-toggle="modal" data-bs-target="#modalIndividual"><i class="bi bi-plus-lg pe-2"></i>Operación
+          Individual</a>
+        <a class="btn btn-primary btn-importar" href=""><i class="bi bi-cloud-download pe-2"></i>Importar Desde
+          Plantilla</a>
+      </div>
     </div>
-    
+
+    <!-- //******** Modal  ********\\  -->
+
+    <!-- Modal Operación individual -->
+    <div class="modal fade" id="modalIndividual" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Operación Individual</h5>
+            <button type="button" class="btn-close btn-close-white btn-lg" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ...
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-Mindividual" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary btn-Magregar">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card de Nuevos Ingresos y Lista de Operaciones -->
+    <div class="card mt-3">
+      <div class="card-body p-4">
+
+        <!-- Acordeon Nuevos Ingresos -->
+
+        <div class="accordion" id="Nuevo-ingreso">
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#cerraringreso" aria-expanded="false" aria-controls="cerraringreso">
+                <img class="pe-2" src="assets/img/elementos/circulo-morado.svg" alt=""><span
+                  class="fw-medium titulo-ingresos">Nuevos Ingresos</span>
+              </button>
+            </h2>
+            <div id="cerraringreso" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body px-3">
+
+                <div class="d-flex align-items-center justify-content-between header-ingresos">
+                  <div>
+                    <h5 class="titulo-ingresos m-0"><i class="bi bi-person pe-2"></i>Nuevos ingresos</h5>
+                  </div>
+                  <div class="btn-header">
+                    <a class="btn btn-primary btn-individual me-2" href=""><i
+                        class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar Nuevo Ingreso</a>
+                    <a class="btn btn-primary btn-individual me-2" href=""><i class="bi bi-trash pe-2"></i>Borrar
+                      Ingresos</a>
+                    <a class="btn btn-primary btn-cancelar me-2" href=""><i class="bi bi-slash-circle pe-2"></i>Cancelar
+                      Operaciones</a>
+                    <a class="btn btn-primary btn-agregari" href=""><i class="bi bi-plus-lg pe-2"></i>Agregar
+                      Ingreso</a>
+                  </div>
+                </div>
+
+                <div class="mt-4 border rounded">
+
+                  <!-- Table Nuevos Ingresos-->
+                  <div class="table-responsive">
+                    <table class="table table-borderless table-hover  table-striped datatable">
+                      <thead>
+                        <tr>
+                          <th class="text-center" scope="col" data-sortable="false"><i
+                              class="bi bi-dash-square text-primary"></i></th>
+                          <th scope="col">Oc / N°guía</th>
+                          <th scope="col">ID</th>
+                          <th class="text-center" scope="col">Panel Puerta</th>
+                          <th class="text-center" scope="col">Operario</th>
+                          <th class="text-center" scope="col">Creado</th>
+                          <th class="text-center" scope="col">Tipo</th>
+                          <th class="text-center" scope="col">Estado</th>
+                          <th class="text-center" scope="col">Tiempo de expiración</th>
+                          <th class="text-center" scope="col">Acción</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- <tr>
+                          <th class="text-center" scope="row">#111</th>
+                          <th scope="row">#111</th>
+                          <td class="text-truncate">Chile</td>
+                          <td class="text-truncate text-center "><span class="badge bg-success">Activo</span></td>
+                          <td class="d-flex justify-content-center">
+                            <a data-bs-toggle="modal" href="#modalEditar"><i
+                                class="bi bi-pencil-fill fs-5 text-primary me-3"></i></a>
+                            <a data-bs-toggle="modal" href="#modalEliminar"><i
+                                class="bi bi-trash-fill fs-5 text-secondary"></i></a>
+                          </td>
+                          <th scope="row">#111</th>
+                          <th scope="row">#111</th>
+                          <td class="text-truncate">Chile</td>
+                          <td class="text-truncate text-center "><span class="badge bg-success">Activo</span></td>
+                          <td class="d-flex justify-content-center">
+                            <a data-bs-toggle="modal" href="#modalEditar"><i
+                                class="bi bi-pencil-fill fs-5 text-primary me-3"></i></a>
+                            <a data-bs-toggle="modal" href="#modalEliminar"><i
+                                class="bi bi-trash-fill fs-5 text-secondary"></i></a>
+                          </td>
+                        </tr> -->
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Fin Table  -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4 mb-3">
+          <h5 class="m-0">Lista de Operaciones</h5>
+          <img src="assets/img/elementos/morada-titulo.svg" alt="">
+        </div>
+
+        <!-- Acordeon Filtros -->
+        <div class="accordion" id="filtros">
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#cerrarAcordeon" aria-expanded="true" aria-controls="cerrarAcordeon">
+                <span class="titulo-filtro fw-medium"><i class="bi bi-filter-circle pe-2"></i>Filtros</span>
+              </button>
+            </h2>
+            <div id="cerrarAcordeon" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#filtros">
+              <div class="accordion-body ">
+                <div class="filtros d-flex">
+                  <form class="row g-4">
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">Fecha Desde:</label>
+                      <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-desde">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">Fecha Hasta:</label>
+                      <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-hasta">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">Orden de Compra:</label>
+                      <input type="text" class="form-control opacity-75 shadow-sm bg-light" id="input-Ocompra">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">ID:</label>
+                      <input type="number" class="form-control opacity-75 shadow-sm bg-light" id="input-ID">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <label for="inputState" class="form-label">Lockers:</label>
+                      <select id="input-locker" class="form-select shadow-sm bg-light">
+                        <option selected>Seleccione...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <label for="input" class="form-label">Puerta:</label>
+                      <input type="number" class="form-control opacity-75 shadow-sm" id="input-puerta">
+                    </div>
+                    <div class="col-md-3 mt-3">
+                      <label for="inputState" class="form-label">Estados:</label>
+                      <select id="input-estado" class="form-select shadow-sm bg-light">
+                        <option selected>Seleccione...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mt-3 d-flex align-items-end justify-content-between">
+                      <a class="btn btn-primary btn-individual me-2 w-50" href=""><i
+                          class="bi bi-dash-circle pe-2"></i>Borrar</a>
+                      <a class="btn btn-primary btn-importar w-50" href=""><i class="bi bi-filter pe-2"></i>Filtrar</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-4">
+
+          <!-- Titulo y botones -->
+          <div class="py-3 px-2 d-flex align-items-center justify-content-between header-listaOP">
+            <div>
+              <h5 class="titulo-ingresos m-0"><i class="bi bi-card-list pe-2"></i>Lista de Operaciones</h5>
+            </div>
+            <div class="btn-listaOP">
+              <a class="btn btn-primary btn-individual me-2" href=""><i class="bi bi-qr-code pe-2"></i>Generar QR</a>
+              <a class="btn btn-primary btn-cancelar me-2" href=""><i class="bi bi-slash-circle pe-2"></i>Cancelar
+                Operaciones</a>
+              <a class="btn btn-primary btn-exportar" href=""><i class="bi bi-file-earmark-excel pe-2"></i>Exportar
+                Tabla</a>
+            </div>
+          </div>
+
+
+          <!-- Table Lista Operaciones-->
+          <div class="table-responsive">
+            <table class="table table-borderless table-hover  table-striped datatable align-middle tabla-operaciones">
+              <thead>
+                <tr>
+                  <th class="text-center" scope="col" data-sortable="false"><i
+                      class="bi bi-dash-square text-primary"></i>
+                  </th>
+                  <th scope="col">Oc / N°guía</th>
+                  <th scope="col">ID</th>
+                  <th class="" scope="col">Panel Puerta</th>
+                  <th class="" scope="col">Operario</th>
+                  <th class="" scope="col">Creado</th>
+                  <th class="" scope="col">Tipo</th>
+                  <th class="" scope="col">Estado</th>
+                  <th class="" scope="col">Tiempo expiración</th>
+                  <th class="" scope="col">Acción</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th class="text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </th>
+                  <td class="fw-medium">SGLM8A1769LXKGXCY6</td>
+                  <td class="text-truncate text-black-50">130443</td>
+                  <td class="text-truncate text-black-50">005 - Pto Montt</td>
+                  <td class="text-truncate text-black-50">Usuario API WOM</td>
+                  <td class="text-truncate text-black-50">18/06/2024 - 11:38:57</td>
+                  <td class="text-truncate text-black-50">Pequeño(14x37x51)</td>
+                  <td class="text-truncate"><span class="badge bg-pendiente"><img class="pe-2"
+                        src="assets/img/elementos/Pendiente-circulo.svg" alt="">Pendiente</span></td>
+                  <td class="text-truncate text-black-50">48hrs</td>
+                  <td class="d-flex justify-content-center">
+                    <a data-bs-toggle="modal" href="#modalEditar"><i class="bi bi-eye fs-5 text-primary me-3"></i></a>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="text-center">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  </th>
+                  <td class="fw-medium">SGLM8A1769LXKGXCY6</td>
+                  <td class="text-truncate text-black-50">130443</td>
+                  <td class="text-truncate text-black-50">005 - Pto Montt</td>
+                  <td class="text-truncate text-black-50">Usuario API WOM</td>
+                  <td class="text-truncate text-black-50">18/06/2024 - 11:38:57</td>
+                  <td class="text-truncate text-black-50">Pequeño(14x37x51)</td>
+                  <td class="text-truncate"><span class="badge bg-entregado"><img class="pe-2"
+                        src="assets/img/elementos/Entregado-circulo.svg" alt="">Entregado</span></td>
+                  <td class="text-truncate text-black-50">48hrs</td>
+                  <td class="d-flex justify-content-center">
+                    <a data-bs-toggle="modal" href="#modalEditar"><i class="bi bi-eye fs-5 text-primary me-3"></i></a>
+                  </td>
+                </tr>
+
+
+                <!-- <tr>
+                  <th class="text-center" scope="row">#111</th>
+                  <th scope="row">#111</th>
+                  <td class="text-truncate">Chile</td>
+                  <td class="text-truncate text-center "><span class="badge bg-success">Activo</span></td>
+                  <td class="d-flex justify-content-center">
+                    <a data-bs-toggle="modal" href="#modalEditar"><i
+                        class="bi bi-pencil-fill fs-5 text-primary me-3"></i></a>
+                    <a data-bs-toggle="modal" href="#modalEliminar"><i
+                        class="bi bi-trash-fill fs-5 text-secondary"></i></a>
+                  </td>
+                  <th scope="row">#111</th>
+                  <th scope="row">#111</th>
+                  <td class="text-truncate">Chile</td>
+                  <td class="text-truncate text-center "><span class="badge bg-success">Activo</span></td>
+                  <td class="d-flex justify-content-center">
+                    <a data-bs-toggle="modal" href="#modalEditar"><i
+                        class="bi bi-pencil-fill fs-5 text-primary me-3"></i></a>
+                    <a data-bs-toggle="modal" href="#modalEliminar"><i
+                        class="bi bi-trash-fill fs-5 text-secondary"></i></a>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
+          <!-- Fin Table  -->
+        </div>
+      </div>
+    </div>
+
+
 
 
 
