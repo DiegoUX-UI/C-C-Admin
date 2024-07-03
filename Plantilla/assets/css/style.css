@@ -311,7 +311,7 @@ h6 {
   left: 0;
   height: 100%;
   width: 260px;
-  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% ;
+  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85%;
   background-size: 320px;
   background-position: calc(100% - 0px) 98%;
   z-index: 100;
@@ -323,7 +323,7 @@ h6 {
 
 .sidebar.close {
   width: 78px;
-  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85% ;
+  background: url('../img/Frame\ 456\ \(1\).svg') no-repeat center 85%;
   background-size: 320px;
   background-position: calc(62% - 0px) 95%;
   background-color: #FFF;
@@ -621,8 +621,8 @@ h6 {
 
 @media (max-width: 1199px) {
   #main {
-      padding: 0px 20px;
-      padding-bottom: 100px;
+    padding: 0px 20px;
+    padding-bottom: 100px;
   }
 }
 
@@ -875,7 +875,7 @@ h6 {
   color: #7239EA;
 }
 
-.iconos-card{
+.iconos-card {
   color: red !important;
 }
 
@@ -894,7 +894,7 @@ h6 {
   font-size: 25px;
 }
 
-.ventas-card{
+.ventas-card {
   border-left: 5px solid #7239EA;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -909,38 +909,39 @@ h6 {
   padding: 0;
 }
 
-@media (max-width: 768px) { 
-  .card-graficos{
+@media (max-width: 768px) {
+  .card-graficos {
     margin-bottom: 100px;
     gap: 20px;
   }
 
-  .bienvenida{
+  .bienvenida {
     margin-bottom: 40px;
     padding-bottom: 10px;
   }
 
-  .paneles-mapa{
+  .paneles-mapa {
     margin-top: 28rem;
     display: flex;
     flex-direction: column;
   }
- }
- 
- .tamano-grafico{
-  min-width: 15vw;
- }
+}
 
- @media (max-width: 992px){
-  .paneles-mapa{
+.tamano-grafico {
+  min-width: 15vw;
+}
+
+@media (max-width: 992px) {
+  .paneles-mapa {
     display: flex;
     flex-direction: column;
   }
-  .ancho-card{
+
+  .ancho-card {
     width: 100%;
     margin: 30px 0px;
   }
- }
+}
 
 /*--------------------------------------------------------------
 # Alert
@@ -1099,7 +1100,7 @@ h6 {
   background: #ffecdf;
 }
 
-.card-icon{
+.card-icon {
   color: #4154f1;
   background: #f6f6fe;
 }
@@ -1230,18 +1231,18 @@ h6 {
 
 /* Estado de paneles */
 
-.texto-titulo{
+.texto-titulo {
   color: #232D42;
   font-size: 16px;
 }
 
-.lista-paneles{
+.lista-paneles {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-.item-paneles{
+.item-paneles {
   border: 1px solid whitesmoke;
   padding: 10px;
   border-radius: 5px;
@@ -1252,23 +1253,23 @@ h6 {
 
 /* Mapa */
 
-.sin-sincron{
+.sin-sincron {
   margin: 0px 10px;
 }
 
-.titulo-sincro{
+.titulo-sincro {
   font-size: 12px;
 }
 
-@media (max-width: 768px) { 
-  .leyenda-mapa{
+@media (max-width: 768px) {
+  .leyenda-mapa {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
   }
- }
+}
 
- 
+
 /*--------------------------------------------------------------
 # Estilos Operaciones ******************************************
 --------------------------------------------------------------*/
@@ -1278,7 +1279,7 @@ h6 {
 # Botones 
 --------------------------------------------------------------*/
 
-.btn-individual{
+.btn-individual {
   background: #F7F7F7 !important;
   border: #D0D5DD 1px solid !important;
   color: #344054 !important;
@@ -1286,10 +1287,18 @@ h6 {
   width: max-content;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   line-height: 1.5rem;
-  
 }
 
-.btn-importar{
+.btn-individual:hover {
+  background-color: #f2f2f2 !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #344054 !important;
+}
+
+/* ************************************** */
+
+.btn-importar {
   background: #EC2273 !important;
   border: #D0D5DD 1px solid !important;
   color: #FFF !important;
@@ -1299,7 +1308,16 @@ h6 {
   line-height: 1.5rem;
 }
 
-.btn-cancelar{
+.btn-importar:hover {
+  background-color: #e13a7d !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #FFF !important;
+}
+
+/* ************************************** */
+
+.btn-cancelar {
   background: #FF5757 !important;
   border: #D0D5DD 1px solid !important;
   color: #FFF !important;
@@ -1309,7 +1327,17 @@ h6 {
   line-height: 1.5rem;
 }
 
-.btn-agregari{
+
+.btn-cancelar:hover {
+  background-color: #fa6868 !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #FFF !important;
+}
+
+/* ************************************** */
+
+.btn-agregari {
   background: #0070FF !important;
   border: #D0D5DD 1px solid !important;
   color: #FFF !important;
@@ -1319,7 +1347,16 @@ h6 {
   line-height: 1.5rem;
 }
 
-.btn-exportar{
+.btn-agregari:hover {
+  background-color: #1C84FF !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #FFFF !important;
+}
+
+/* ************************************** */
+
+.btn-exportar {
   background: #5caa5a !important;
   border: #D0D5DD 1px solid !important;
   color: #FFF !important;
@@ -1329,9 +1366,18 @@ h6 {
   line-height: 1.5rem;
 }
 
-/* Botones Modal */
+.btn-exportar:hover {
+  background-color: #6ba36a !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #FFF !important;
+}
 
-.btn-Mindividual{
+/* ************************************** */
+
+/* // ***** Botones Modal ***** \\ */
+
+.btn-Mindividual {
   background: #F7F7F7 !important;
   border: #D0D5DD 1px solid !important;
   color: #344054 !important;
@@ -1339,10 +1385,19 @@ h6 {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   line-height: 1.5rem;
   min-width: 100px;
-  
+
 }
 
-.btn-Magregar{
+.btn-Mindividual:hover {
+  background-color: #f2f2f2 !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #344054 !important;
+}
+
+/* ************************************** */
+
+.btn-Magregar {
   background: #0070FF !important;
   border: #D0D5DD 1px solid !important;
   color: #FFF !important;
@@ -1352,53 +1407,60 @@ h6 {
   min-width: 100px;
 }
 
+.btn-Magregar:hover {
+  background-color: #1C84FF !important;
+  text-decoration: none;
+  transition-duration: 0.1s;
+  color: #FFFF !important;
+}
+
 
 /* Pantalla pequeña */
 
-@media (max-width: 768px) { 
-  .btn-arriba{
+@media (max-width: 768px) {
+  .btn-arriba {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
     justify-content: space-around;
   }
 
-  .titulo-pagina{
-    text-align: left; 
+  .titulo-pagina {
+    text-align: left;
     align-self: start;
   }
 
-  .btn-titulo{
+  .btn-titulo {
     margin: 10px 0px;
     display: flex;
     align-items: stretch !important;
     justify-content: space-around;
   }
- }
+}
 
 
 /*--------------------------------------------------------------
 # Titulo Acordeon Nuevos ingresos
 --------------------------------------------------------------*/
-.titulo-ingresos{
+.titulo-ingresos {
   font-size: 16px;
   color: #202224;
 }
 
 /* Pantalla pequeña */
 
-@media (max-width: 768px) { 
-  .header-ingresos{
+@media (max-width: 768px) {
+  .header-ingresos {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
   }
 
-  .btn-header{
+  .btn-header {
     margin: 10px 0px;
   }
 
-  .btn-header .btn{
+  .btn-header .btn {
     width: 100%;
     margin: 5px 0px;
   }
@@ -1410,32 +1472,34 @@ h6 {
 
 .datatable-top {
   background-color: #ffff;
-  color: #000; 
-  border-top-left-radius: 10px; 
+  color: #000;
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
   border-bottom: 1px solid #ccc;
 }
+
 .datatable-top .datatable-selector:focus,
 .datatable-top .datatable-input:focus {
-  outline: none; 
+  outline: none;
 }
 
-.datatable-input{
-  border: 1px solid #ccc !important; 
+.datatable-input {
+  border: 1px solid #ccc !important;
   border-radius: 5px;
   padding: 5px 10px;
 }
 
-.datatable-selector{
+.datatable-selector {
   border-radius: 5px;
   margin-right: 10px;
   border: 1px solid #ccc;
   padding: 5px;
   padding-right: 0;
 }
-.datatable-dropdown label{
+
+.datatable-dropdown label {
   font-size: 16px;
   font-weight: 400;
   text-wrap: wrap;
@@ -1467,12 +1531,13 @@ h6 {
   color: #aaa; 
 } */
 
-.datatable-info{
+.datatable-info {
   color: #ababab;
   font-size: 12px;
 }
 
-.datatable-table th button, .datatable-pagination-list button {
+.datatable-table th button,
+.datatable-pagination-list button {
   font-size: 15px;
   color: #202224;
   font-weight: 400;
@@ -1486,7 +1551,7 @@ h6 {
   --bs-table-bg-type: #FAFAFA;
 }
 
-.table tr{
+.table tr {
   font-size: 14px;
 }
 
@@ -1495,6 +1560,7 @@ h6 {
   color: #037847 !important;
   background: #ECFDF3 !important;
 }
+
 .bg-pendiente {
   color: #364254;
   background: #F2F4F7 !important;
@@ -1507,23 +1573,34 @@ h6 {
 
 /* Filtro */
 
-.titulo-filtro{
+.titulo-filtro {
   color: #202224;
   font-size: 16px;
 }
 
+/* // ***** Formulario ***** \\ */
+
 .form-label {
   margin-bottom: .5rem;
   font-size: 14px;
-  color: #8f8f8f;
+  color: #717171;
 }
 
-.form-select{
-  color: rgba(0, 0, 0, .5) !important;
+/* .form-select{
+  color: rgba(142, 141, 141, 0.5) !important;
+  font-size: 15px;
+  background: #f5f5f5d7;
+} */
+
+.form-control {
+  color: rgb(0, 0, 0) !important;
+  font-size: 15px;
+  background-color: rgba(51, 51, 51, 0.05);
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
 
-.form-control{
-  color: rgba(0, 0, 0, .5) !important;
+::placeholder {
+  color: rgba(142, 141, 141, 0.5) !important;
 }
 
 
@@ -1531,16 +1608,17 @@ h6 {
 /* Pantalla pequeña */
 
 @media (max-width: 768px) {
-  .header-listaOP{
+  .header-listaOP {
     display: flex;
     flex-direction: column;
     margin: 10px 0px;
   }
 
-  .btn-listaOP{
+  .btn-listaOP {
     margin: 10px 0px;
   }
-  .btn-listaOP .btn{
+
+  .btn-listaOP .btn {
     width: 100%;
     margin: 5px 0px;
   }
@@ -1550,34 +1628,70 @@ h6 {
     margin-top: 10px;
   }
 
-  .datatable-dropdown label{
+  .datatable-dropdown label {
     font-size: 16px;
     font-weight: 400;
     text-overflow: ellipsis;
   }
 
- }
+}
 
 
- /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Estilo Modal General
 --------------------------------------------------------------*/
 
-.modal-header{
+.modal-header {
   background: #4D008B;
   padding: 10px;
 }
 
-.modal-title{
+.modal-title {
   color: #FFF;
 }
 
-.btn-close{
+.btn-close {
   font-size: 30px;
 }
 
+.texto-modal {
+  font-size: 14px;
+}
+
+/* // ***** Modal Generar QR ***** \\ */
+
+.qr-entrega {
+  color: #037847;
+  text-align: start;
+  font-weight: 500;
+}
+
+.qr-retiro {
+  color: #A480EF;
+  text-align: start;
+  font-weight: 500;
+}
+
+.qr-nguia {
+  color: #4D008B;
+  font-weight: 500;
+}
 
 
+.svg-P-entrega {
+  height: 25px;
+}
+
+.svg-P-retiro {
+  height: 25px;
+}
+
+ /*--------------------------------------------------------------
+# Estilo Toast General
+--------------------------------------------------------------*/
 
 
-
+.toast-header{
+  background: #4D008B;
+  color: #fff;
+}
