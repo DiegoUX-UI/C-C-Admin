@@ -318,6 +318,7 @@ h6 {
   transition: all 0.1s ease;
   margin-top: 60px;
   background-color: #FFF;
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
 
 }
 
@@ -327,6 +328,7 @@ h6 {
   background-size: 320px;
   background-position: calc(62% - 0px) 95%;
   background-color: #FFF;
+  box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
 }
 
 .sidebar .nav-links .item {
@@ -1694,4 +1696,80 @@ h6 {
 .toast-header{
   background: #4D008B;
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Lockers 
+--------------------------------------------------------------*/
+
+.sin-sincro{
+  color: #D0021B;
+  font-weight: bold;
+}
+
+.sincro-demora{
+  color: #FBBD15;
+  font-weight: bold;
+}
+
+.sincro{
+  color: #65B013;
+  font-weight: bold;
+}
+
+
+.accordion-button{
+  height: 45px;
+  min-width: max-content;
+}
+
+
+.titulo-sin-sincro{
+  font-size: 16px;
+  color: #D0021B;
+}
+
+.titulo-sin-demora{
+  font-size: 16px;
+  color: #FBBD15;
+}
+.titulo-sincro{
+  font-size: 16px;
+  color: #65B013;
+}
+
+
+
+
+.espec-locker p{
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+@media (max-width: 1310px) {
+  .card-locker {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-locker .estado-locker{
+    width: 100%;
+  }
+}
+@media (max-width: 1500px) {
+  .accordion-header .accordion-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start !important;
+    height: auto;
+  }
+
+  .accordion-body .espec-locker{
+    display: flex;
+    flex-direction: column;
+    text-align: center !important;
+    justify-content: center;
+  }
 }
