@@ -129,7 +129,7 @@
     </div> -->
     <ul class="nav-links">
       <li class="item">
-        <div class="iocn-link active">
+        <div class="iocn-link">
           <a href="index.html">
             <i class="bi bi-grid"></i>
             <span class="link_name">Dashboard</span>
@@ -174,7 +174,7 @@
         </ul>
       </li>
       <li class="item ">
-        <div class="iocn-link">
+        <div class="iocn-link active">
           <a href="estadistica.html">
             <i class="bi bi-clipboard2-data"></i>
             <span class="link_name">Estadísticas</span>
@@ -235,70 +235,55 @@
   </aside><!-- Fin Sidebar -->
 
   <!-- ======= Main ======= -->
-  <main id="main" class="main">
+  <main id="main" class="main pt-4">
 
-    <div class="card mt-0 bienvenida">
-      <div class="card-body w-100">
-        <div class="">
-          <h5 class="card-title"><span>Bienvenido, </span>Nombre Usuario</h5>
-          <p class="card-text text-white text-truncate">With supporting text below as a natural lead-in to additional
-            content.</p>
-        </div>
-        <!-- Card graficos -->
-        <div class="row  mt-4 card-graficos">
+    <div class="paginatitulo d-flex align-items-center">
+      <div class="titulo-pagina">
+        <h4 class="mb-0">Estadísticas</h4>
+        <img src="assets/img/elementos/linea-rosada.svg" alt="">
+      </div>
+    </div>
 
-          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
-              <div class="card-body d-flex align-items-center justify-content-between  info-card py-3">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
-                    class="text-muted small pt-2">Aumentado</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
-              <div class="card-body d-flex align-items-center justify-content-between info-card py-3 px-3">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
-                    class="text-muted small pt-2">Aumentado</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
-              <div class="card-body d-flex align-items-center justify-content-between info-card py-3 px-3">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
-                    class="text-muted small pt-2">Aumentado</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
-              <div class="card-body d-flex align-items-center justify-content-betweeninfo-card py-3 px-3">
-                <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
-                </div>
-                <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
-                    class="text-muted small pt-2">Aumentado</span>
+
+    <!-- Filtro -->
+    <div class="row mt-2">
+      <div class="col-md-12">
+        <!-- Acordeon Filtros -->
+        <div class="accordion" id="filtros">
+          <div class="accordion-item shadow-sm">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#cerrarAcordeon" aria-expanded="true" aria-controls="cerrarAcordeon">
+                <span class="titulo-filtro fw-medium"><i class="bi bi-filter-circle pe-2"></i>Filtros</span>
+              </button>
+            </h2>
+            <div id="cerrarAcordeon" class="accordion-collapse collapse" aria-labelledby="headingOne"
+              data-bs-parent="#filtros">
+              <div class="accordion-body ">
+                <div class="filtros d-flex justify-content-between">
+                  <form class="row g-4 filtro-estadis ">
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">Fecha Desde:</label>
+                      <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-desde">
+                    </div>
+                    <div class="col-md-3">
+                      <label for="input" class="form-label">Fecha Hasta:</label>
+                      <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-hasta">
+                    </div>
+                    <div class="col-md-3 ">
+                      <label for="inputState" class="form-label">Lockers:</label>
+                      <select id="input-locker" class="form-select shadow-sm bg-light">
+                        <option selected>Seleccione...</option>
+                        <option>...</option>
+                      </select>
+                    </div>
+                  </form>
+                  <div class=" mt-3 d-flex align-items-end justify-content-between">
+                    <a class="btn btn-primary btn-individual me-2 " href=""><i
+                        class="bi bi-dash-circle pe-2"></i>Borrar</a>
+                    <a class="btn btn-primary btn-importar " href=""><i
+                        class="bi bi-cloud-download pe-2"></i>Importar</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -307,61 +292,6 @@
       </div>
     </div>
 
-
-    <!-- Estado paneles y Mapa -->
-    <div class="row paneles-mapa align-items-stretch" >
-
-      <!-- Estado Paneles -->
-      <div class="col-sm-12 col-md-4 mb-2 ancho-card">
-        <div class="card w-100" style="min-height: 434px;">
-          <div class="card-body pt-0">
-            <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo">Estado de Paneles</h5>
-            <ul class="px-2 list-unstyled mt-4">
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-rojo.svg" alt=""><span class="text-danger texto-panel">Antofagasta,
-                  053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-rojo.svg" alt=""><span class="text-danger texto-panel">Antofagasta,
-                  053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-amarillo.svg" alt=""><span
-                  class="text-warning texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
-                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
-                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
-                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Mapa -->
-      <div class="col-sm-12 col-md-8  ancho-card">
-        <div class="card w-100" style="min-height: 434px;">
-          <div class="card-body p-1 pb-0">
-              <img class="img-fluid" src="assets/img/elementos/Mapa.svg" alt="" width: 100%">
-          </div>
-          <!-- Leyenda Mapa -->
-          <div class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-locker bg-light">
-            <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
-                src="assets/img/elementos/paneles-rojo.svg" alt="">
-              <span class="opacity-50 titulo-sincro">Sin Sincronización</span>
-            </div>
-            <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
-                src="assets/img/elementos/paneles-amarillo.svg" alt=""><span
-                class="opacity-50 titulo-sincro">Sincronización con demora</span></div>
-            <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
-                src="assets/img/elementos/paneles-verde.svg" alt=""><span
-                class="opacity-50 titulo-sincro">Sincronizado</span></div>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!-- Graficos -->
     <div class="row mt-4">

@@ -160,14 +160,14 @@
       </li>
       <li class="item ">
         <div class="iocn-link active">
-          <a href="#">
+          <a href="locker.html">
             <i class="bi bi-building-lock"></i>
             <span class="link_name">Lockers</span>
           </a>
           <!-- <i class='bx bxs-chevron-down arrow'></i> -->
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Lockers</a></li>
+          <li><a class="link_name" href="locker.html">Lockers</a></li>
           <!-- <li><a href="#">Web Design</a></li>
           <li><a href="#">Login Form</a></li>
           <li><a href="#">Card Design</a></li> -->
@@ -175,14 +175,14 @@
       </li>
       <li class="item ">
         <div class="iocn-link">
-          <a href="#">
+          <a href="estadistica.html">
             <i class="bi bi-clipboard2-data"></i>
             <span class="link_name">Estadísticas</span>
           </a>
           <!-- <i class='bx bxs-chevron-down arrow'></i> -->
         </div>
         <ul class="sub-menu">
-          <li><a class="link_name" href="#">Estadísticas</a></li>
+          <li><a class="link_name" href="estadistica.html">Estadísticas</a></li>
           <!-- <li><a href="#">Web Design</a></li>
           <li><a href="#">Login Form</a></li>
           <li><a href="#">Card Design</a></li> -->
@@ -219,7 +219,7 @@
           <li><a href="#">Box Icons</a></li> -->
         </ul>
       </li>
-      <li>
+      <!-- <li>
         <div class="profile-details">
           <div class="profile-content">
             <img src="assets/img/profile-img.jpg" alt="profileImg">
@@ -230,7 +230,7 @@
           </div>
           <i class='bx bx-log-out'></i>
         </div>
-      </li>
+      </li> -->
     </ul>
   </aside><!-- Fin Sidebar -->
 
@@ -244,7 +244,7 @@
       </div>
     </div>
 
-    <div class="row align-items-end mt-2">
+    <div class="row align-items-end my-2">
       <div class="col-md-4">
         <label class="form-label" for="tipoTramite">Filtro por región:</label>
         <select class="form-select shadow-sm" id="Panel">
@@ -272,21 +272,21 @@
 
     <!-- ======= Estado Lockers ======= -->
 
-    <div class="row mt-5 px-3 justify-content-between card-locker">
+    <div class="row mt-4 px-3 justify-content-between card-locker">
 
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
             <div>
-              <h5 class="m-0 p-0 sin-sincro">Sin sincronización</h5>
+              <h5 class="m-0 p-0 sin-sincro">Sin Sincronización</h5>
               <img class="img-fluid" src="assets/img/estado-locker/linea-sinSincro.svg" alt="">
             </div>
 
             <div class="mt-4">
-              <div class="accordion" id="lockersin-sincro">
+              <div class="accordion accordion-locker" id="lockersin-sincro">
                 <div class="accordion-item shadow-sm">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-light collapsed d-flex justify-content-between ms-0" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button bg-light collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse"
                       data-bs-target="#cerrarAcordeon" aria-expanded="true" aria-controls="cerrarAcordeon">
                       <div class="d-flex align-items-center">
                         <img class="me-2" src="assets/img/estado-locker/Sin-sincro.svg" alt="" width="16px">
@@ -294,11 +294,11 @@
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
-                        <a class="mx-1" href="#"><i class="bi bi-eye text-black fs-5"></i></a>
+                        <a class="mx-1" href="ver-locker.html"><i class="bi bi-eye text-black fs-5"></i></a>
                       </div>
                     </button>
                   </h2>
-                  <div id="cerrarAcordeon" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  <div id="cerrarAcordeon" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#locker">
                     <div class="accordion-body ">
                       <div class="row">
@@ -322,20 +322,6 @@
                 </div>
               </div>
 
-              <!-- <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button d-flex align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Accordion Item #1
-                    </button>
-                  </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                    </div>
-                  </div>
-                </div>
-              </div> -->
             </div>
 
           </div>
@@ -350,7 +336,7 @@
             </div>
 
             <div class="mt-4">
-              <div class="accordion" id="lockersin-demora">
+              <div class="accordion accordion-locker" id="lockersin-demora">
                 <div class="accordion-item shadow-sm">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button bg-light collapsed d-flex justify-content-between ms-0" type="button" data-bs-toggle="collapse"
@@ -365,7 +351,7 @@
                       </div>
                     </button>
                   </h2>
-                  <div id="cerrarSin-demora" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  <div id="cerrarSin-demora" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#locker">
                     <div class="accordion-body ">
                       <div class="row">
@@ -404,14 +390,14 @@
             </div>
 
             <div class="mt-4">
-              <div class="accordion" id="lockerSincro">
+              <div class="accordion accordion-locker" id="lockerSincro">
                 <div class="accordion-item shadow-sm">
                   <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button bg-light collapsed d-flex justify-content-between ms-0" type="button" data-bs-toggle="collapse"
                       data-bs-target="#cerrarSincro" aria-expanded="true" aria-controls="cerrarSincro">
                       <div class="d-flex align-items-center">
                         <img class="me-2 img-fluid" src="assets/img/estado-locker/Sincro.svg" alt="" width="16px">
-                        <span class="titulo-sincro fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
+                        <span class="titulo-sincronizado fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
@@ -419,7 +405,7 @@
                       </div>
                     </button>
                   </h2>
-                  <div id="cerrarSincro" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                  <div id="cerrarSincro" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#locker">
                     <div class="accordion-body ">
                       <div class="row">
@@ -453,8 +439,8 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer fixed-bottom bg-white shadow-lg">
-    <div class="copyright text-truncate">
-      &copy; Copyright <strong><span>C&C</span></strong>. Todos los derechos reservados
+    <div class="copyright text-truncate d-flex align-items-center justify-content-end">
+      <span class="me-2">Powered by</span> <img class="img-fluid" src="assets/img/Logo DTS-black.png" alt="" width="60px">
     </div>
   </footer><!-- Fin Footer -->
 
