@@ -262,15 +262,15 @@
               <div class="accordion-body ">
                 <div class="filtros d-flex justify-content-between">
                   <form class="row g-4 filtro-estadis ">
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                       <label for="input" class="form-label">Fecha Desde:</label>
                       <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-desde">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-4">
                       <label for="input" class="form-label">Fecha Hasta:</label>
                       <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-hasta">
                     </div>
-                    <div class="col-md-3 ">
+                    <div class="col-md-4 ">
                       <label for="inputState" class="form-label">Lockers:</label>
                       <select id="input-locker" class="form-select shadow-sm bg-light">
                         <option selected>Seleccione...</option>
@@ -441,6 +441,35 @@
             <!-- End Line Chart -->
           </div>
 
+        </div>
+      </div>
+
+      <div class="col-md-6 mt-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Donut Chart</h5>
+
+            <!-- Donut Chart -->
+            <div id="donutChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#donutChart"), {
+                  series: [44, 55, 13, 43, 22],
+                  chart: {
+                    height: 350,
+                    type: 'donut',
+                    toolbar: {
+                      show: true
+                    }
+                  },
+                  labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                }).render();
+              });
+            </script>
+            <!-- End Donut Chart -->
+
+          </div>
         </div>
       </div>
     </div>
