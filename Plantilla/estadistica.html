@@ -296,7 +296,7 @@
     <!-- Graficos -->
     <div class="row mt-4">
       <!-- Grafico Distribución de retiros -->
-      <div class="col-md-6">
+      <div class="col-md-8">
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
@@ -322,7 +322,8 @@
                   }],
                   chart: {
                     type: 'bar',
-                    height: 350
+                    height: 350,
+                    toolbar: false
                   },
                   plotOptions: {
                     bar: {
@@ -377,7 +378,40 @@
         </div>
       </div>
 
-      <div class="col-md-6">
+      <div class="col-md-4">
+        <div class="card" style="min-height: 420px;">
+
+          <div class="card-body">
+            <h5 class="card-title pt-0 mb-0  texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros
+
+            <!-- Donut Chart -->
+            <div class="mt-5" id="donutChart"></div>
+
+            <script>
+              document.addEventListener("DOMContentLoaded", () => {
+                new ApexCharts(document.querySelector("#donutChart"), {
+                  series: [44, 55, 13, 43, 22],
+                  chart: {
+                    height: 300,
+                    type: 'donut',
+                    toolbar: {
+                      show: false
+                    }
+                  },
+                  labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                }).render();
+              });
+            </script>
+            <!-- End Donut Chart -->
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-md-5 mt-4">
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
@@ -444,34 +478,66 @@
         </div>
       </div>
 
-      <div class="col-md-6 mt-4">
-        <div class="card">
+      <div class="col-md-3 mt-4">
+        <div class="card" style="min-height: 420px;">
           <div class="card-body">
-            <h5 class="card-title">Donut Chart</h5>
+            <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros
 
-            <!-- Donut Chart -->
-            <div id="donutChart"></div>
+            <!-- Pie Chart -->
+            <div class="mt-5 d-flex alingn-items-center" id="pieChart"></div>
 
             <script>
               document.addEventListener("DOMContentLoaded", () => {
-                new ApexCharts(document.querySelector("#donutChart"), {
+                new ApexCharts(document.querySelector("#pieChart"), {
                   series: [44, 55, 13, 43, 22],
                   chart: {
-                    height: 350,
-                    type: 'donut',
+                    height: 500,
+                    type: 'pie',
                     toolbar: {
-                      show: true
+                      show: false
                     }
                   },
-                  labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E'],
+                  labels: ['Team A', 'Team B', 'Team C', 'Team D', 'Team E']
                 }).render();
               });
             </script>
-            <!-- End Donut Chart -->
+            <!-- End Pie Chart -->
 
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mt-4">
+        <div class="card" style="min-height: 420px;">
+          <div class="card-body">
+            <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros
+
+            <div class="row mx-2 mt-5 d-flex  align-items-center " style="min-height: 300px;">
+              <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="text-center w-100">Pendientes de entrega</h6>
+                <img src="assets/img/elementos/entrega.svg" alt="">
+                <div class="mt-2 entrega p-2 rounded fw-medium">00:02:13</div>
+              </div>
+
+              <div class="col-md-4 bg-white d-flex flex-column justify-content-center align-items-center">
+                <h6 class="text-center text-black-50">Tiempo</h6>
+                <img src="assets/img/elementos/Tiempo.svg" alt="">
+              </div>
+
+              <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <h6 class="text-center w-75">Pendientes de retiro</h6>
+                <img src="assets/img/elementos/retiro.svg" alt="">
+                <div class="mt-2 retiro p-2 rounded fw-medium">00:02:13</div>
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      
     </div>
 
 

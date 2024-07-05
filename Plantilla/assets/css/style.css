@@ -1277,7 +1277,7 @@ h6 {
     flex-direction: column;
   }
 
-  .card-estadisticas-index{
+  .card-estadisticas-index {
     width: 100% !important;
   }
 
@@ -1285,7 +1285,7 @@ h6 {
     margin-top: 24.5rem;
     display: flex;
     flex-direction: column;
-}
+  }
 }
 
 
@@ -1605,10 +1605,11 @@ h6 {
   color: #717171;
 }
 
-.formulario-apertura .form-select{
+.formulario-apertura .form-select {
   font-size: 15px;
 }
-.filtro-estadis .form-select{
+
+.filtro-estadis .form-select {
   font-size: 15px;
 }
 
@@ -1706,12 +1707,12 @@ h6 {
   height: 25px;
 }
 
- /*--------------------------------------------------------------
+/*--------------------------------------------------------------
 # Estilo Toast General
 --------------------------------------------------------------*/
 
 
-.toast-header{
+.toast-header {
   background: #4D008B;
   color: #fff;
 }
@@ -1720,43 +1721,44 @@ h6 {
 # Lockers 
 --------------------------------------------------------------*/
 
-.sin-sincro{
+.sin-sincro {
   color: #D0021B;
   font-weight: bold;
 }
 
-.sincro-demora{
+.sincro-demora {
   color: #FBBD15;
   font-weight: bold;
 }
 
-.sincro{
+.sincro {
   color: #65B013;
   font-weight: bold;
 }
 
 
-.accordion-button{
+.accordion-button {
   height: 45px;
   min-width: max-content;
 }
 
 
-.titulo-sin-sincro{
+.titulo-sin-sincro {
   font-size: 16px;
   color: #D0021B;
 }
 
-.titulo-sin-demora{
+.titulo-sin-demora {
   font-size: 16px;
   color: #FBBD15;
 }
-.titulo-sincronizado{
+
+.titulo-sincronizado {
   font-size: 16px;
   color: #65B013;
 }
 
-.espec-locker p{
+.espec-locker p {
   margin: 8px 0;
   font-size: 14px;
 }
@@ -1767,14 +1769,15 @@ h6 {
     flex-direction: column;
   }
 
-  .card-locker .estado-locker{
+  .card-locker .estado-locker {
     width: 100%;
 
     margin: 20px 0;
   }
 }
+
 @media (max-width: 1500px) {
-  .accordion-locker .accordion-header .accordion-button{
+  .accordion-locker .accordion-header .accordion-button {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1783,7 +1786,7 @@ h6 {
     height: auto;
   }
 
-  .accordion-body .espec-locker{
+  .accordion-body .espec-locker {
     display: flex;
     flex-direction: column;
     text-align: center !important;
@@ -1795,25 +1798,31 @@ h6 {
 # Ver Lockers 
 --------------------------------------------------------------*/
 
-.pagina-anterior{
+.pagina-anterior {
   font-size: 1.5rem;
   font-weight: 400;
   color: #7239EA;
 }
 
 
-.tabla-locker , .datatable-table th button, .datatable-pagination-list button {
+.tabla-locker,
+.datatable-table th button,
+.datatable-pagination-list button {
   font-size: 15px;
   color: #667085 !important;
   font-weight: 400;
 }
-.tabla-locker , th {
+
+.tabla-locker,
+th {
   font-size: 12px;
   color: #667085 !important;
   font-weight: 400;
   text-align: center;
 }
-.tabla-locker , .dato-tabla-locker {
+
+.tabla-locker,
+.dato-tabla-locker {
   font-size: 12px;
   color: #667085 !important;
   font-weight: 400;
@@ -1825,22 +1834,24 @@ h6 {
 }
 
 .tabla-locker .dato-tabla-locker {
-  color: #667085 ;
+  color: #667085;
 }
 
 
-.tabla-locker , .datatable-dropdown label {
+.tabla-locker,
+.datatable-dropdown label {
   font-size: 12px;
   font-weight: 400;
   text-wrap: wrap;
 }
 
-.tabla-locker , .datatable-input {
+.tabla-locker,
+.datatable-input {
   width: 100%;
   font-size: 12px;
 }
 
-.tabla-locker th{
+.tabla-locker th {
   width: 258.5px !important;
 }
 
@@ -1850,39 +1861,46 @@ h6 {
     flex-direction: column;
   }
 
-  .locker-dispo{
+  .locker-dispo {
     width: 100%;
   }
 
-  .img-mapa{
+  .img-mapa {
     width: 100% !important;
   }
 
-  .apertura{
+  .apertura {
     width: 100% !important;
     height: auto;
     margin: 0;
   }
 
-  .card-ver-locker{
+  .card-ver-locker {
     margin-bottom: 100px;
   }
 
-  .accordion-apertura{
+  .accordion-apertura {
     margin: 20px 0px;
   }
 
-  .apertura  .accordion-header .accordion-button{
+  .apertura .accordion-header .accordion-button {
     display: flex;
     flex-direction: row;
     width: 100% !important;
   }
 
-  .titulo-ocupa{
+  .titulo-ocupa {
     margin: 0 !important;
     margin-bottom: 10px !important;
   }
 }
 
+.entrega{
+  background: #037847;
+  color: #FFF;
+}
 
-
+.retiro{
+  background: #A480EF;
+  color: #FFF;
+}
