@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>DTS Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logos/logo-wom 2.svg" rel="icon">
+  <link href="assets/img/logos/logo-wom 2.svg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header top-0  d-flex fixed-top align-items-center  bg-principal shadow-lg">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center ps-3">
+        <img src="assets/img/logos/logo-wom.png" alt="Logo wom" width="60px">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- Fin Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- FIn Barra Buscar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- Fin Icono Buscar-->
+
+        <!-- Perfil -->
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <div class="ms-3 d-flex flex-column"><span class="usuario">Nombre Usuario</span><span
+                class="cargo opacity-50">Diseñador Web</span></div>
+            <span class="d-none d-md-block dropdown-toggle ps-2 fw-light">
+
+            </span>
+          </a><!-- Imagen Perfil -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Nombre Usuario</h6>
+              <span>Diseñador Web</span>
+            </li>
+            <li>
+              <hr class="dropdown-divider mx-2">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>Mi perfil</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Configuraciones</span>
+              </a>
+            </li>
+
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                <i class="bi bi-question-circle"></i>
+                <span>Necesitas ayuda?</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Cerrar Sesión</span>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+
+  </header><!-- Fin Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside class="sidebar close">
+    <!-- <div class="logo-details">
+      <img src="assets/img/logos/logo-wom 2.svg" alt="">
+      <span class="logo_name">WOM</span>
+    </div> -->
+    <ul class="nav-links">
+      <li class="item">
+        <div class="iocn-link">
+          <a href="index.html">
+            <i class="bi bi-grid"></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu ">
+          <li><a class="link_name" href="index.html">Dashboard</a></li>
+          <!-- <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li> -->
+        </ul>
+      </li>
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="operaciones.html">
+            <i class="bi bi-card-list"></i>
+            <span class="link_name">Operaciones</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="operaciones.html">Operaciones</a></li>
+          <!-- <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li> -->
+        </ul>
+      </li>
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="locker.html">
+            <i class="bi bi-building-lock"></i>
+            <span class="link_name">Lockers</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="locker.html">Lockers</a></li>
+          <!-- <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li> -->
+        </ul>
+      </li>
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="estadistica.html">
+            <i class="bi bi-clipboard2-data"></i>
+            <span class="link_name">Estadísticas</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="estadistica.html">Estadísticas</a></li>
+          <!-- <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li> -->
+        </ul>
+      </li>
+      <li class="item ">
+        <div class="iocn-link active">
+          <a href="multimedia.html">
+            <i class="bi bi-camera-video"></i>
+            <span class="link_name">Multimedia</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="multimedia.html">Multimedia</a></li>
+          <!-- <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li> -->
+        </ul>
+      </li>
+      <hr class="mx-2">
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-cog'></i>
+            <span class="link_name">Configuraciones</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name p-1" href="#">Configuraciones</a></li>
+          <!-- <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li> -->
+        </ul>
+      </li>
+      <!-- <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="assets/img/profile-img.jpg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name fw-medium">Nombre Usario</div>
+            <div class="job opacity-50">Diseñador Web</div>
+          </div>
+          <i class='bx bx-log-out'></i>
+        </div>
+      </li> -->
+    </ul>
+  </aside><!-- Fin Sidebar -->
+
+  <!-- ======= Main ======= -->
+  <main id="main" class="main pt-4" style="min-height: 80vh;">
+
+    <div class="paginatitulo d-flex align-items-center">
+      <div class="titulo-pagina">
+        <h4 class="mb-0">Lockers</h4>
+        <img src="assets/img/elementos/linea-rosada.svg" alt="">
+      </div>
+    </div>
+
+    <div class="row align-items-end my-3">
+      <div class="col-md-12">
+        <div class="card" style="min-height: auto">
+          <div class="card-body">
+
+            <div class="d-flex">
+              <div class="mb-3">
+                <h5 class="m-0">Seleccione los archivos que desea subir:</h5>
+                <img src="assets/img/elementos/morada-titulo.svg" alt="">
+              </div>
+              <div class="ms-2">
+                <span class="formato opacity-50">(jpg - png - mp4)</span>
+              </div>
+              <div class="ms-auto">
+                <i class="bi bi-info-circle opacity-50" data-bs-toggle="tooltip" data-bs-placement="top" title="Descargar Manual"></i>
+              </div>
+            </div>
+
+            <div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Sin Archivos Seleccionados" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <a class="btn btn-primary btn-importar" href="#" id="button-addon2"><i
+                    class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar</a>
+              </div>
+            </div>
+          
+          </div>
+          <div class="card-footer text-muted">
+            2 days ago
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main><!-- Fin #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer fixed-bottom bg-white shadow-lg">
+    <div class="copyright text-truncate d-flex align-items-center justify-content-end">
+      <span class="me-2">Powered by</span> <img class="img-fluid" src="assets/img/Logo DTS-black.png" alt=""
+        width="60px">
+    </div>
+  </footer><!-- Fin Footer -->
+
+
+  <script src="https://kit.fontawesome.com/195b4568b4.js" crossorigin="anonymous"></script>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+
+</body>
+
+</html>
