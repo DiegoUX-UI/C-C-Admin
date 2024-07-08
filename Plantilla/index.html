@@ -31,6 +31,9 @@
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Libreria Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 
 
 </head>
@@ -237,6 +240,7 @@
   <!-- ======= Main ======= -->
   <main id="main" class="main">
 
+    <!-- ======= Banner de Bienvenida ======= -->
     <div class="card mt-0 bienvenida">
       <div class="card-body w-100">
         <div class="">
@@ -244,8 +248,9 @@
           <p class="card-text text-white text-truncate">With supporting text below as a natural lead-in to additional
             content.</p>
         </div>
-        <!-- Card graficos -->
-        <div class="row  mt-4 card-graficos">
+
+        <!-- ======= Card Graficos Bienvenida ======= -->
+        <div class="row  mt-4 card-graficos animate__animated animate__bounceInDown">
 
           <div class="col-sm-12 col-md-3 d-flex justify-content-center">
             <div class="card tamano-grafico ventas-card card-estadisticas-index">
@@ -307,11 +312,9 @@
       </div>
     </div>
 
-
-    <!-- Estado paneles y Mapa -->
-    <div class="row paneles-mapa align-items-stretch" >
-
-      <!-- Estado Paneles -->
+    <!-- ======= Estado paneles y Mapa ======= -->
+    <div class="row paneles-mapa align-items-stretch animate__animated animate__fadeInRight">
+      <!-- ======= Estado paneles ======= -->
       <div class="col-sm-12 col-md-4 mb-2 ancho-card">
         <div class="card w-100" style="min-height: 434px;">
           <div class="card-body pt-0">
@@ -340,14 +343,15 @@
         </div>
       </div>
 
-      <!-- Mapa -->
+      <!-- ======= Mapa ======= -->
       <div class="col-sm-12 col-md-8  ancho-card">
         <div class="card w-100" style="min-height: 434px;">
           <div class="card-body p-1 pb-0">
-              <img class="img-fluid" src="assets/img/elementos/Mapa.svg" alt="" width: 100%">
+            <img class="img-fluid" src="assets/img/elementos/Mapa.svg" alt="" width: 100%">
           </div>
-          <!-- Leyenda Mapa -->
-          <div class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-locker bg-light">
+          <!-- ======= Leyenda Mapa ======= -->
+          <div
+            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-locker bg-light">
             <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
                 src="assets/img/elementos/paneles-rojo.svg" alt="">
               <span class="opacity-50 titulo-sincro">Sin Sincronización</span>
@@ -363,9 +367,10 @@
       </div>
     </div>
 
-    <!-- Graficos -->
-    <div class="row mt-4">
-      <!-- Grafico Distribución de retiros -->
+    <!-- ======= Graficos ======= -->
+    <div class="row mt-4 animate__animated animate__fadeInLeft">
+
+      <!-- ======= Graficos Distribución de Retiros ======= -->
       <div class="col-md-6">
         <div class="card card-reportes">
 
@@ -373,7 +378,6 @@
             <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros
             </h5>
 
-            <!-- Column Chart -->
             <div id="columnChart"></div>
 
 
@@ -381,23 +385,21 @@
               document.addEventListener("DOMContentLoaded", () => {
                 new ApexCharts(document.querySelector("#columnChart"), {
                   series: [{
-                    name: 'Net Profit',
-                    data: [44, 55, 57, 56, 61, 58, 63, 60, 66]
+                    name: 'Hora',
+                    data: [44, 0, 57, 56, 61, 58, 63, 60, 66, 0, 15, 16, 28, 0]
                   }, {
-                    name: 'Revenue',
-                    data: [76, 85, 101, 98, 87, 105, 91, 114, 94]
-                  }, {
-                    name: 'Free Cash Flow',
-                    data: [35, 41, 36, 26, 45, 48, 52, 53, 41]
+                    name: 'Dato 2',
+                    data: []
                   }],
                   chart: {
                     type: 'bar',
-                    height: 350
+                    height: 350,
+                    toolbar: false
                   },
                   plotOptions: {
                     bar: {
                       horizontal: false,
-                      columnWidth: '85%',
+                      columnWidth: '65%',
                       endingShape: 'rounded'
                     },
                   },
@@ -431,32 +433,37 @@
                     show: true, // Asegura que la leyenda se muestre
                     position: 'bottom', // Posiciona la leyenda debajo del gráfico
                     horizontalAlign: 'center', // Alinea horizontalmente la leyenda en el centro
+                    offsetY: 8, // Ajusta el margen superior (offsetY) según tus necesidades
                     labels: {
                       colors: ['#000'] // Color del texto de la leyenda
                     },
                     markers: {
-                      fillColors: ['#00E396'] // Color para 'Hora'
+                      fillColors: ['#008FFB', '#00E396'] // Color para 'Hora'
+                    }
+                  },
+                  css: {
+                    ".apexcharts-legend": {
+                      marginTop: "10px" // Añade margen superior usando CSS en línea
                     }
                   }
                 }).render();
               });
             </script>
-            <!-- End Column Chart -->
           </div>
 
         </div>
       </div>
 
-      <div class="col-md-6">
+      <!-- ======= Grafico de Lineas ======= -->
+      <div class="col-md-6 ">
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
             <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-arrow-up pe-2"></i>Nombre Grafico</h5>
-            <!-- Line Chart -->
+
             <div id="lineChart"></div>
 
             <script>
-              // Grafico de lineas
               document.addEventListener("DOMContentLoaded", () => {
                 new ApexCharts(document.querySelector("#lineChart"), {
                   series: [{
@@ -508,15 +515,12 @@
                 }).render();
               });
             </script>
-            <!-- End Line Chart -->
+
           </div>
 
         </div>
       </div>
     </div>
-
-
-
 
   </main><!-- Fin #main -->
 

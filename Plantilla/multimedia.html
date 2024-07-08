@@ -31,7 +31,8 @@
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <!-- Libreria Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -235,7 +236,7 @@
   </aside><!-- Fin Sidebar -->
 
   <!-- ======= Main ======= -->
-  <main id="main" class="main pt-4" style="min-height: 80vh;">
+  <main id="main" class="main pt-4" style="min-height: 93vh;">
 
     <div class="paginatitulo d-flex align-items-center">
       <div class="titulo-pagina">
@@ -245,7 +246,7 @@
     </div>
 
     <div class="row align-items-end my-3">
-      <div class="col-md-12">
+      <div class="col-md-12 animate__animated animate__bounceInDown">
         <div class="card" style="min-height: auto">
           <div class="card-body">
 
@@ -258,22 +259,24 @@
                 <span class="formato opacity-50">(jpg - png - mp4)</span>
               </div>
               <div class="ms-auto">
-                <i class="bi bi-info-circle opacity-50" data-bs-toggle="tooltip" data-bs-placement="top" title="Descargar Manual"></i>
+                <a href=""><i class="bi bi-info-circle opacity-50" data-bs-toggle="tooltip" data-bs-placement="top"
+                    title="Descargar Manual"></i></a>
               </div>
             </div>
 
-            <div>
+            <div class="mt-3">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Sin Archivos Seleccionados" aria-label="Recipient's username"
-                  aria-describedby="button-addon2">
+                <input type="text" class="form-control" placeholder="Sin Archivos Seleccionados"
+                  aria-label="Recipient's username" aria-describedby="button-addon2">
                 <a class="btn btn-primary btn-importar" href="#" id="button-addon2"><i
                     class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar</a>
               </div>
             </div>
-          
+
           </div>
-          <div class="card-footer text-muted">
-            2 days ago
+          <div class="card-footer d-flex justify-content-end text-muted mt-4">
+            <a class="btn btn-primary btn-individual me-2 " href="#" style="width: 8%;">Cancelar</a>
+            <a class="btn btn-primary btn-agregari" href="#" style="width: 8%;">Aceptar</a>
           </div>
         </div>
       </div>

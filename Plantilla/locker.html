@@ -31,7 +31,8 @@
   <!-- CSS -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-
+  <!-- Libreria Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 </head>
 
@@ -237,6 +238,7 @@
   <!-- ======= Main ======= -->
   <main id="main" class="main pt-4">
 
+    <!-- ======= Titulo Pagina ======= -->
     <div class="paginatitulo d-flex align-items-center">
       <div class="titulo-pagina">
         <h4 class="mb-0">Lockers</h4>
@@ -244,7 +246,10 @@
       </div>
     </div>
 
-    <div class="row align-items-end my-2">
+    <!-- ======= Filtro y Leyenda Lockers ======= -->
+    <div class="row align-items-end my-2 animate__animated animate__bounceInDown">
+
+      <!-- ======= Filtros por Región ======= -->
       <div class="col-md-4">
         <label class="form-label" for="tipoTramite">Filtro por región:</label>
         <select class="form-select shadow-sm" id="Panel">
@@ -254,7 +259,8 @@
         </select>
       </div>
 
-      <div class="col-md-8 ">
+      <!-- ======= Leyenda Lockers ======= -->
+      <div class="col-md-8">
         <div class="p-2  px-2 d-flex flex-row justify-content-center leyenda-mapa bg-light rounded shadow-sm"
           style="height: 38px;">
           <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
@@ -271,9 +277,9 @@
     </div>
 
     <!-- ======= Estado Lockers ======= -->
+    <div class="row mt-4 px-3 justify-content-between card-locker animate__animated animate__bounceInRight">
 
-    <div class="row mt-4 px-3 justify-content-between card-locker">
-
+      <!-- *** Sin Sincronización *** -->
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
@@ -327,11 +333,12 @@
           </div>
         </div>
       </div>
+      <!-- *** Sincronización con Demora *** -->
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
             <div>
-              <h5 class="m-0 p-0 sincro-demora">Sincronización con Demora</h5>
+              <h5 class="m-0 p-0 sincro-demora">Sincronización Con Demora</h5>
               <img class="img-fluid" src="assets/img/estado-locker/linea-sinDemora.svg" alt="">
             </div>
 
@@ -347,7 +354,7 @@
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
-                        <a class="mx-1" href="#"><i class="bi bi-eye text-black fs-5"></i></a>
+                        <a class="mx-1" href="ver-locker.html"><i class="bi bi-eye text-black fs-5"></i></a>
                       </div>
                     </button>
                   </h2>
@@ -381,6 +388,7 @@
           </div>
         </div>
       </div>
+      <!-- *** Sincronizado *** -->
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
@@ -401,7 +409,7 @@
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
-                        <a class="mx-1" href="#"><i class="bi bi-eye text-black fs-5"></i></a>
+                        <a class="mx-1" href="ver-locker.html"><i class="bi bi-eye text-black fs-5"></i></a>
                       </div>
                     </button>
                   </h2>
