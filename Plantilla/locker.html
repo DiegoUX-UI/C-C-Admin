@@ -278,25 +278,25 @@
 
     <!-- ======= Estado Lockers ======= -->
     <div class="row mt-4 px-3 justify-content-between card-locker animate__animated animate__bounceInRight">
-
-      <!-- *** Sin Sincronización *** -->
+      
+      <!-- *** Sincronizado *** -->
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
             <div>
-              <h5 class="m-0 p-0 sin-sincro">Sin Sincronización</h5>
-              <img class="img-fluid" src="assets/img/estado-locker/linea-sinSincro.svg" alt="">
+              <h5 class="m-0 p-0 sincro">Sincronizado</h5>
+              <img class="img-fluid" src="assets/img/estado-locker/linea-sincro.svg" alt="">
             </div>
 
             <div class="mt-4">
-              <div class="accordion accordion-locker" id="lockersin-sincro">
+              <div class="accordion accordion-locker" id="lockerSincro">
                 <div class="accordion-item shadow-sm">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-light collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#cerrarAcordeon" aria-expanded="true" aria-controls="cerrarAcordeon">
+                    <button class="accordion-button bg-light collapsed d-flex justify-content-between ms-0" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#cerrarSincro" aria-expanded="true" aria-controls="cerrarSincro">
                       <div class="d-flex align-items-center">
-                        <img class="me-2" src="assets/img/estado-locker/Sin-sincro.svg" alt="" width="16px">
-                        <span class="titulo-sin-sincro fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
+                        <img class="me-2 img-fluid" src="assets/img/estado-locker/Sincro.svg" alt="" width="16px">
+                        <span class="titulo-sincronizado fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
@@ -304,7 +304,7 @@
                       </div>
                     </button>
                   </h2>
-                  <div id="cerrarAcordeon" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  <div id="cerrarSincro" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#locker">
                     <div class="accordion-body ">
                       <div class="row">
@@ -327,7 +327,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
 
           </div>
@@ -383,29 +382,30 @@
               </div>
             </div>
 
+            
 
 
           </div>
         </div>
       </div>
-      <!-- *** Sincronizado *** -->
+      <!-- *** Sin Sincronización *** -->
       <div class="col-md-4 estado-locker">
         <div class="card" style="min-height: 65vh;">
           <div class="card-body">
             <div>
-              <h5 class="m-0 p-0 sincro">Sincronizado</h5>
-              <img class="img-fluid" src="assets/img/estado-locker/linea-sincro.svg" alt="">
+              <h5 class="m-0 p-0 sin-sincro">Sin Sincronización</h5>
+              <img class="img-fluid" src="assets/img/estado-locker/linea-sinSincro.svg" alt="">
             </div>
 
             <div class="mt-4">
-              <div class="accordion accordion-locker" id="lockerSincro">
+              <div class="accordion accordion-locker" id="lockersin-sincro">
                 <div class="accordion-item shadow-sm">
                   <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-light collapsed d-flex justify-content-between ms-0" type="button" data-bs-toggle="collapse"
-                      data-bs-target="#cerrarSincro" aria-expanded="true" aria-controls="cerrarSincro">
+                    <button class="accordion-button bg-light collapsed d-flex justify-content-between" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#cerrarAcordeon" aria-expanded="true" aria-controls="cerrarAcordeon">
                       <div class="d-flex align-items-center">
-                        <img class="me-2 img-fluid" src="assets/img/estado-locker/Sincro.svg" alt="" width="16px">
-                        <span class="titulo-sincronizado fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
+                        <img class="me-2" src="assets/img/estado-locker/Sin-sincro.svg" alt="" width="16px">
+                        <span class="titulo-sin-sincro fw-medium d-flex align-items-center text-truncate">001 - Laboratorio WOM</span>
                       </div>
                       <div>
                         <a class="ms-5 mx-1" href="#"><i class="bi bi-arrow-repeat text-primary fs-5"></i></a>
@@ -413,7 +413,7 @@
                       </div>
                     </button>
                   </h2>
-                  <div id="cerrarSincro" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  <div id="cerrarAcordeon" class="accordion-collapse collapse" aria-labelledby="headingOne"
                     data-bs-parent="#locker">
                     <div class="accordion-body ">
                       <div class="row">
@@ -436,6 +436,7 @@
                   </div>
                 </div>
               </div>
+
             </div>
 
           </div>

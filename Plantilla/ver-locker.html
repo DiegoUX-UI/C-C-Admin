@@ -250,7 +250,7 @@
     <div class="row mt-2 card-ver-locker">
       <div class="col-md-12">
         <div class="card">
-          <div class="card-body">
+          <div class="card-body py-2">
             <div class="d-flex align-items-center">
               <a class="btn btn-individual  me-3 " href="locker.html"><i class="bi bi-arrow-left pe-2"></i>Volver</a>
               <img class="pe-2" src="assets/img/elementos/circulo-verde.svg" alt=""><span
@@ -258,12 +258,14 @@
             </div>
 
             <div class="row mt-3 locker-puerta animate__animated animate__bounceInRight">
+
+              <!-- <a href="#" data-bs-toggle="modal" data-bs-target="#mapa">mapa</a> -->
               <!-- ======= Disponibilidad Lockers ======= -->
-              <div class="col-md-5 locker-dispo">
+              <!-- <div class="col-md-6 locker-dispo">
                 <div class="card" style="min-height: 310px;">
-                  <div class="card-body p-0">
-                    <img class="img-fluid img-mapa" src="assets/img/elementos/Mapa-locker.png" alt=""
-                      style="height: 270px; width: 100%">
+                  <div class="card-body p-0 d-flex align-items-center justify-content-center">
+
+
                   </div>
                   <div class="card-footer text-muted d-flex justify-content-center p-2 w-auto leyenda-locker">
                     <div class="d-flex align-items-center">
@@ -282,9 +284,12 @@
 
                 </div>
 
-              </div>
+              </div> -->
+              
+              
               <!-- ======= Apertura de Puertas ======= -->
-              <div class="col-md-7 apertura">
+              <div class="col-md-6 apertura">
+
                 <!-- ======= Acordeon Apertura de Puertas ======= -->
                 <div class="accordion accordion-apertura" id="Nuevo-ingreso">
                   <div class="accordion-item shadow-sm">
@@ -322,14 +327,14 @@
                           </div>
                           <div class="col-md-12 mt-2">
                             <label for="exampleFormControlTextarea1" class="form-label">Motivo:</label>
-                            <textarea class="form-control" id="motivo" rows="3"
+                            <textarea class="form-control" id="motivo" rows="2"
                               placeholder="Escriba aquí..."></textarea>
                           </div>
-
                         </form>
-                        <div class="d-flex justify-content-end p-2 mt-2 border-top">
-                          <a class="btn btn-primary btn-individual me-2 " href="#"><i
-                              class="bi bi-dash-circle pe-2"></i>Borrar</a>
+
+                        <div class="d-flex justify-content-end p-2 mt-3 border-top">
+                          <a class="btn btn-primary btn-individual me-2 " href="#"><i class="bi bi-dash-circle pe-2"
+                              type></i>Borrar</a>
                           <a class="btn btn-primary btn-importar " href="#" id="RegistarApertura"><i
                               class="bi bi-door-open pe-2"></i>Registar
                             Apertura</a>
@@ -349,8 +354,8 @@
               </div>
 
               <!-- ======= Table Ocupación lockers ======= -->
-              <div class="table-responsive p-0 pb-0 border rounded tabla-ver-locker">
-                <table class="table table-borderless table-hover  table-striped  align-middle tabla-locker">
+              <div class="table-responsive p-0 pb-0 border rounded tabla-ver-locker" style="min-height: 290px;">
+                <table class="table table-borderless table-hover  table-striped  align-middle tabla-locker pb-0">
                   <thead>
                     <tr>
                       <th class=""></th>
@@ -461,6 +466,225 @@
         }, 2000);
       });
     </script>
+
+    <!-- //******** Modal  ********\\  -->
+
+    <!-- *** Modal Mapa Locker *** -->
+    <div class="modal fade" id="mapa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Importar desde Plantilla</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 py-2">
+            <div class="card">
+              <div class="card-body p-0">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="panel-locker">
+                      <div class="canvas-wrap">
+                        <canvas id="puerta1" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>1</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta2" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>2</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta3" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>3</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta4" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>4</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta5" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>5</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta6" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>6</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta7" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>7</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta8" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>8</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta9" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>9</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta10" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>10</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta11" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>11</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta12" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>12</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-locker">
+                      <div class="canvas-wrap">
+                        <canvas id="puerta13" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>13</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap2">
+                        <canvas id="puerta14" class="locker-md loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>14</p>
+                        </div>
+                      </div>
+                      <!-- pantalla -->
+                      <div class="canvas-wrap3">
+                        <canvas id="puerta15" class="locker-lg loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>15</p>
+                        </div>
+                      </div>
+                      <!-- pantalla -->
+                      <div class="canvas-wrap">
+                        <canvas id="puerta16" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>16</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap2">
+                        <canvas id="puerta17" class="locker-md loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>17</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap3">
+                        <canvas id="puerta18" class="locker-lg loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>18</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="panel-locker">
+                      <div class="canvas-wrap">
+                        <canvas id="puerta19" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>19</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta20" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>20</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta21" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>21</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta22" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>22</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta23" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>23</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta24" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>24</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta25" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>25</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta26" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>26</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta27" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>27</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta28" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>28</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta29" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>29</p>
+                        </div>
+                      </div>
+                      <div class="canvas-wrap">
+                        <canvas id="puerta30" class="locker-xs loker-gris"></canvas>
+                        <div class="overlay">
+                          <p>30</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-Mindividual" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary btn-Magregar">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
 
 
 

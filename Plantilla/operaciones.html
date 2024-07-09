@@ -33,8 +33,13 @@
 
 
   <!-- Libreria Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
+
+  <!-- Libreria Datapicker -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -528,6 +533,16 @@
           </div>
         </div>
 
+        <!-- ======= Script Datepicker ======= -->
+        <script>
+          $(function () {
+            $("#inputF-desde").datepicker();
+          });
+          $(function () {
+            $("#inputF-hasta").datepicker();
+          });
+        </script>
+
 
         <!-- ======= Lista Operaciones ======= -->
         <div class="mt-4">
@@ -771,7 +786,7 @@
 
     <!-- *** Modal Cargar Generar QR *** -->
     <div class="modal fade" id="generar-qr" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered  modal-lg">
+      <div class="modal-dialog modal-dialog-centered  modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Generar QR</h5>
@@ -798,6 +813,39 @@
                   <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
                       src="assets/img/elementos/pendiente-retiro.svg" alt=""><span
                       class="qr-retiro text-start">(Retiro)</span></div>
+                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                </div>
+              </div>
+              <div class="col-md-4 p-2">
+                <img src="assets/img/elementos/codigo-qr.svg" alt="">
+                <div class="px-4 d-flex flex-column info-qr">
+                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                  <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                      src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                      class="qr-entrega text-start">(Entrega)</span></div>
+                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                </div>
+              </div>
+              <div class="col-md-4 p-2">
+                <img src="assets/img/elementos/codigo-qr.svg" alt="">
+                <div class="px-4 d-flex flex-column info-qr">
+                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                  <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                      src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                      class="qr-entrega text-start">(Entrega)</span></div>
+                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                </div>
+              </div>
+              <div class="col-md-4 p-2">
+                <img src="assets/img/elementos/codigo-qr.svg" alt="">
+                <div class="px-4 d-flex flex-column info-qr">
+                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                  <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                      src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                      class="qr-entrega text-start">(Entrega)</span></div>
                   <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
                 </div>
               </div>

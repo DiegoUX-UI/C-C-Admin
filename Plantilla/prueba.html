@@ -35,193 +35,115 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center ">
-        <img src="assets/img/Logo DTS-white.png" alt="">
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn text-white"></i>
-    </div><!-- Fin Logo -->
-
-    <div class="search-bar">
-      <form class="search-form d-flex align-items-center" method="POST" action="#">
-        <input type="text" name="query" placeholder="Buscar" title="Enter search keyword">
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-      </form>
-    </div><!-- FIn Barra Buscar -->
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        <li class="nav-item d-block d-lg-none">
-          <a class="nav-link nav-icon search-bar-toggle " href="#">
-            <i class="bi bi-search"></i>
-          </a>
-        </li><!-- Fin Icono Buscar-->
-
-        <!-- Perfil -->
-        <li class="nav-item dropdown pe-3">
-
-          <a class="nav-link nav-perfil d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2 text-white">Rene Puente</span>
-          </a><!-- Imagen Perfil -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow perfil">
-            <li class="dropdown-header">
-              <h6>Rene Puente</h6>
-              <span>Admin</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider mx-2">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="Perfil-Usuario.html">
-                <i class="bi bi-person"></i>
-                <span>Mi perfil</span>
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="Perfil-Usuario.html">
-                <i class="bi bi-gear"></i>
-                <span>Configuraciones</span>
-              </a>
-            </li>
-
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-question-circle"></i>
-                <span>Necesitas ayuda?</span>
-              </a>
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="login.html">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Cerrar Sesión</span>
-              </a>
-            </li>
-
-          </ul>
-        </li>
-
-      </ul>
-    </nav>
-
-  </header><!-- Fin Header -->
-
-
-  <div class="sidebar close">
-    <!-- <div class="logo-details">
-      <i class='bx bxl-c-plus-plus'></i>
-      <span class="logo_name">CodingLab</span>
-    </div> -->
-    <ul class="nav-links">
-      <li>
-        <a href="#" class="active-sidebar">
-          <i class='bx bx-grid-alt'></i>
-          <span class="link_name">Dashboard</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Category</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link hover-link">
-          <a href="#" class="link">
-            <i class='bx bx-collection'></i>
-            <span class="link_name">Category</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link hover-link">
-          <a href="#" class="link">
-            <i class='bx bx-collection'></i>
-            <span class="link_name">Category</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow'></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
-        </ul>
-      </li>
-      <li>
-        <div class="iocn-link hover-link">
-          <a href="#" class="link">
-            <i class='bx bx-collection'></i>
-            <span class="link_name">Category</span>
-          </a>
-        </div>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li>
-
-      <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <!--<img src="image/profile.jpg" alt="profileImg">-->
-          </div>
-          <div class="name-job">
-            <div class="profile_name">Prem Shahi</div>
-            <div class="job">Web Desginer</div>
-          </div>
-          <i class='bx bx-log-out'></i>
-        </div>
-      </li>
-    </ul>
-  </div>
-
-  <script>
-    let arrow = document.querySelectorAll(".arrow");
-    for (var i = 0; i < arrow.length; i++) {
-      arrow[i].addEventListener("click", (e) => {
-        let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
-        arrowParent.classList.toggle("showMenu");
-      });
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-auto-rows: 50px;
+      width: 100%;
+      /* Ajusta el ancho total según sea necesario */
+      margin: auto;
     }
-    let sidebar = document.querySelector(".sidebar");
-    let sidebarBtn = document.querySelector(".toggle-sidebar-btn");
-    console.log(sidebarBtn);
-    sidebarBtn.addEventListener("click", () => {
-      sidebar.classList.toggle("close");
-    });
-  </script>
 
-<main id="main" class="main">
+    .grid-item {
+      display: flex;
+      align-items: end;
+      border: 1px solid #000;
+      padding: 2px;
+      font-size: 12px;
+    }
 
-  <div class="paginatitulo pb-0">
-    <h1>Dashboard</h1>
-    <div class="linea mt-2 mb-0"></div>
-  </div>
+    .grid-item span {
+      border: 1px solid #000;
+      padding: 1px;
+    }
 
+    .locker-xs {
+      width: 100%;
+      height: 32px;
+      background-color: lightblue;
+    }
+
+    .locker-md {
+      width: 100%;
+      height: 60px;
+      background-color: lightgreen;
+    }
+
+    .locker-lg {
+      width: 100%;
+      height: 100px;
+      background-color: lightcoral;
+    }
+  </style>
+
+
+  <main id="main" class="main p-2 pt-5">
+
+    <!-- <div class="row h-padding-responsive80">
+      <div class="col-sm-12 col-md-12 col-lg-9 offset-lg-3 h-margin-top20 ">
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="panel">
+              .
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div> -->
+    <div class="row">
+      <div class="col-md-6">
+        <div class="grid-container">
+          <div class="contenedor-item">
+            <!-- Primera columna (1 al 12) -->
+            <div class="grid-item locker-xs"><span>1</span></div>
+            <div class="grid-item locker-xs"><span>2</span></div>
+            <div class="grid-item locker-xs"><span>3</span></div>
+            <div class="grid-item locker-xs"><span>4</span></div>
+            <div class="grid-item locker-xs"><span>5</span></div>
+            <div class="grid-item locker-xs"><span>6</span></div>
+            <div class="grid-item locker-xs"><span>7</span></div>
+            <div class="grid-item locker-xs"><span>8</span></div>
+            <div class="grid-item locker-xs"><span>9</span></div>
+            <div class="grid-item locker-xs"><span>10</span></div>
+            <div class="grid-item locker-xs"><span>11</span></div>
+            <div class="grid-item locker-xs"><span>12</span></div>
+          </div>
+
+          <div class="contenedor-item">
+            <!-- Segunda columna (13 al 18) -->
+            <div class="grid-item locker-xs"><span>13</span></div>
+            <div class="grid-item locker-md"><span>14</span></div>
+            <div class="grid-item locker-lg"><span>15</span></div>
+            <div class="grid-item locker-xs"><span>16</span></div>
+            <div class="grid-item locker-md"><span>17</span></div>
+            <div class="grid-item locker-lg"><span>18</span></div>
+          </div>
+
+          <div class="contenedor-item">
+            <!-- Tercera columna (19 al 30) -->
+            <div class="grid-item locker-xs"><span>19</span></div>
+            <div class="grid-item locker-xs"><span>20</span></div>
+            <div class="grid-item locker-xs"><span>21</span></div>
+            <div class="grid-item locker-xs"><span>22</span></div>
+            <div class="grid-item locker-xs"><span>23</span></div>
+            <div class="grid-item locker-xs"><span>24</span></div>
+            <div class="grid-item locker-xs"><span>25</span></div>
+            <div class="grid-item locker-xs"><span>26</span></div>
+            <div class="grid-item locker-xs"><span>27</span></div>
+            <div class="grid-item locker-xs"><span>28</span></div>
+            <div class="grid-item locker-xs"><span>29</span></div>
+            <div class="grid-item locker-xs"><span>30</span></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-</main><!-- Fin #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer bg-white  fixed-bottom ">
-    <div class="copyright">
-      &copy; Copyright <strong><span>DTS Autoservicio</span></strong>. Todos los derechos reservados
-    </div>
-  </footer><!-- Fin Footer -->
+
+  </main><!-- Fin #main -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
