@@ -38,8 +38,8 @@
 
   <!-- Libreria Datapicker -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 
 </head>
 
@@ -409,8 +409,7 @@
                       data-bs-target="#validoC-operacion"><i class="bi bi-slash-circle pe-2"></i>Cancelar
                       Operaciones</a>
 
-                    <a class="btn btn-primary btn-agregari" href="#" data-bs-toggle="modal"
-                      data-bs-target="#agregar-ingreso"><i class="bi bi-plus-lg pe-2"></i>Agregar Ingreso</a>
+                    <a class="btn btn-primary btn-agregari" href="#" id="agregar-ingreso"><i class="bi bi-plus-lg pe-2"></i>Agregar Ingreso</a>
                   </div>
                 </div>
 
@@ -918,6 +917,18 @@
     <!-- *** Toast Exportar Tabla *** -->
     <!-- Toast -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+      <div id="toastagregar-ingreso" class="toast hide bg-white" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header py-0">
+          <i class="bi bi-file-earmark-excel pe-2"></i><strong class="me-auto">Agregar Ingreso</strong>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body p-3 d-flex align-items-center">
+          Ingreso Aregado...<i class="bi bi-check2-circle ps-1 text-success fs-5"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
       <div id="toastExportar" class="toast hide bg-white" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header py-0">
           <i class="bi bi-file-earmark-excel pe-2"></i><strong class="me-auto">Exportar Tabla</strong>
@@ -930,6 +941,26 @@
     </div>
 
     <!-- Script Toast -->
+    <script>
+      document.getElementById('agregar-ingreso').addEventListener('click', function () {
+        var toastEl = document.getElementById('toastagregar-ingreso');
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+
+        // Cerrar el modal después de 2 segundos (2000 milisegundos)
+        setTimeout(function () {
+          var modalEl = document.getElementById('modalagregar-ingreso');
+          var modal = bootstrap.Modal.getInstance(modalEl);
+          modal.hide();
+        }, 2000);
+
+        // Cerrar el toast después de 2.5 segundos (2500 milisegundos)
+        setTimeout(function () {
+          toast.hide();
+        }, 2000);
+      });
+    </script>
+    
     <script>
       document.getElementById('Exportar').addEventListener('click', function () {
         var toastEl = document.getElementById('toastExportar');
