@@ -1919,10 +1919,11 @@ th {
 }
 
 .grid-item span {
-  border-right: 1px solid #000000;
-  border-top: 1px solid #000000;
-  color: #ffffff;
-  background: #7239EA;
+  border-right: 1px solid #ECFDF3;
+  border-top: 1px solid #ECFDF3;
+  border-top-right-radius: 5px;
+  color: #037847 !important;
+  background: #ECFDF3 !important;
   font-weight: bold;
   width: 18px;
   text-align: center;
