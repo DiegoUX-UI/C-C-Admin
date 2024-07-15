@@ -71,7 +71,7 @@
 
           <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
             <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <div class="ms-3 d-flex flex-column"><span class="usuario" >Nombre Usuario</span><span
+            <div class="ms-3 d-flex flex-column"><span class="usuario">Nombre Usuario</span><span
                 class="cargo opacity-50">Diseñador Web</span></div>
             <span class="d-none d-md-block dropdown-toggle ps-2 fw-light">
 
@@ -80,7 +80,7 @@
 
           <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
             <li class="dropdown-header">
-              <h6>Nombre Usuario</h6>
+              <h6 class="user-name">Nombre Usuario</h6>
               <span>Diseñador Web</span>
             </li>
             <li>
@@ -245,7 +245,8 @@
     <div class="card mt-0 bienvenida">
       <div class="card-body w-100">
         <div class="">
-          <h5 class="card-title"><span>Bienvenido, </span><span class="text-white" id="username">Nombre Usuario</span></h5>
+          <h5 class="card-title"><span>Bienvenido, </span><span class="text-white" id="username">Nombre Usuario</span>
+          </h5>
           <p class="card-text text-white text-truncate">With supporting text below as a natural lead-in to additional
             content.</p>
         </div>
@@ -254,13 +255,20 @@
           // Mostrar mensaje de bienvenida si el usuario ha iniciado sesión correctamente
           window.addEventListener('DOMContentLoaded', function () {
             if (localStorage.getItem('loggedIn') === 'true') {
-              const welcomeMessage = document.getElementById('welcomeMessage');
               const username = localStorage.getItem('username');
+
+              // Actualizar todos los elementos donde debe aparecer el nombre de usuario
               document.getElementById('username').textContent = username;
-              welcomeMessage.style.display = 'block';
-              // Limpiar el estado de la sesión
-              localStorage.removeItem('loggedIn');
-              localStorage.removeItem('username');
+              document.querySelectorAll('.usuario').forEach(element => {
+                element.textContent = username;
+              });
+              document.querySelectorAll('.user-name').forEach(element => {
+                element.textContent = username;
+              });
+
+              // // Limpiar el estado de la sesión si es necesario
+              // localStorage.removeItem('loggedIn');
+              // localStorage.removeItem('username');
             }
           });
         </script>
@@ -329,12 +337,13 @@
     </div>
 
     <!-- ======= Estado paneles y Mapa ======= -->
-    <div class="row paneles-mapa align-items-stretch animate__animated animate__fadeInRight">
+    <div class="row paneles-mapa align-items-stretch animate__animated animate__fadeInRight row-paneles-mapa">
       <!-- ======= Estado paneles ======= -->
       <div class="col-sm-12 col-md-4 mb-2 ancho-card">
-        <div class="card w-100" style="min-height: 482px;">
+        <div class="card w-100 " style="min-height: 434px;">
           <div class="card-body pt-0">
-            <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo">Estado de Paneles</h5>
+            <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo"><i class="bi bi-broadcast-pin pe-2"></i>Estado de Paneles
+            </h5>
             <ul class="px-2 list-unstyled mt-4">
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
                   src="assets/img/elementos/paneles-rojo.svg" alt=""><span class="text-danger texto-panel">Antofagasta,
@@ -354,23 +363,24 @@
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
                   src="assets/img/elementos/paneles-verde.svg" alt=""><span
                   class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
-              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
-                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
-                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
             </ul>
           </div>
         </div>
       </div>
 
       <!-- ======= Mapa ======= -->
-      <div class="col-sm-12 col-md-8  ancho-card">
-        <div class="card w-100" style="min-height: 482px;">
-          <div class="card-body p-1 pb-0">
-            <img class="img-fluid w-100 h-100" src="assets/img/elementos/Mapa.svg" alt="">
+      <div class="col-sm-12 col-md-8 mb-2  ancho-card">
+        <div class="card w-100 h-100" style="min-height: 434px;">
+          <div class="card-body p-1">
+            <!-- <img class="img-fluid w-100 h-100" src="assets/img/elementos/Mapa.svg" alt="" style="height: 431px;"> -->
+            <iframe class="rounded"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13317.970913666792!2d-70.6576384!3d-33.4364672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1721065609990!5m2!1ses!2scl"
+              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- ======= Leyenda Mapa ======= -->
           <div
-            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-mapa bg-light">
+            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-mapa">
             <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
                 src="assets/img/elementos/paneles-rojo.svg" alt="">
               <span class="opacity-50 titulo-sincro">Sin Sincronización</span>

@@ -20,7 +20,6 @@ body {
   background-repeat: no-repeat;
   background-size: 420px;
   background-position: calc(100% - 0px) 70%;
-  /* height: 100vh; */
   overflow-x: hidden;
 }
 
@@ -300,7 +299,8 @@ h6 {
 }
 
 .header-nav .profile .dropdown-item:hover {
-  background-color: #f6f9ff;
+  background-color: #7139ea;
+  color: #FFF;
 }
 
 /*--------------------------------------------------------------
@@ -1267,8 +1267,8 @@ h6 {
 @media (max-width: 768px) {
   .leyenda-mapa {
     display: flex;
-    flex-direction: column;
-    margin: 10px 0px;
+    /* flex-direction: column;
+    margin: 10px 0px; */
   }
 }
 
@@ -1692,7 +1692,7 @@ h6 {
   color: #A480EF;
   text-align: start;
   font-weight: 500;
-  
+
 }
 
 .qr-nguia {
@@ -1709,9 +1709,10 @@ h6 {
   height: 25px;
 }
 
-.qr-imagen{
+.qr-imagen {
   height: 130px;
 }
+
 /*--------------------------------------------------------------
 # Estilo Toast General
 --------------------------------------------------------------*/
@@ -1799,13 +1800,15 @@ h6 {
   }
 }
 
-.bi-arrow-repeat{
+.bi-arrow-repeat {
   color: #000000 !important;
 }
-.bi-arrow-repeat:hover{
+
+.bi-arrow-repeat:hover {
   color: #0D6EFD !important;
 }
-.bi-eye:hover{
+
+.bi-eye:hover {
   color: #0D6EFD !important;
 }
 
@@ -1964,9 +1967,11 @@ th {
 .contenedor-item .locker-dispo {
   background-color: #30E859;
 }
+
 .contenedor-item .locker-ocupado {
   background-color: #FDCB40;
 }
+
 .contenedor-item .locker-pc {
   background-color: #EFF2F5;
 }
@@ -2022,13 +2027,6 @@ th {
   color: #7239EA;
 }
 
-.bi-info-circle:hover{
+.bi-info-circle:hover {
   color: #0D6EFD !important;
 }
-
-
-
-
-
-
-
