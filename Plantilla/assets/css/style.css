@@ -896,12 +896,35 @@ h6 {
   font-size: 25px;
 }
 
-.ventas-card {
+.ocupacion-card .card-icon {
+  color: #13860d;
+  background: #eafaea;
+  font-size: 25px;
+}
+
+.entrega-card .card-icon {
+  color: #eaca39;
+  background: #faf7ea;
+  font-size: 25px;
+}
+
+.vencer-card .card-icon {
+  color: #ea3939;
+  background: #faeaea;
+  font-size: 25px;
+}
+
+.text-graficos{
+  color: #7239EA;
+}
+
+/* Borde card graficos */
+/* .ventas-card {
   border-left: 5px solid #7239EA;
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-}
+} */
 
 .info-card h6 {
   font-size: 16px;
@@ -942,6 +965,10 @@ h6 {
   .ancho-card {
     width: 100%;
     margin: 30px 0px;
+  }
+
+  .mapa-locker{
+    height: 35rem;
   }
 }
 

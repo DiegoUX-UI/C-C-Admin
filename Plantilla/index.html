@@ -277,15 +277,15 @@
         <div class="row  mt-4 card-graficos animate__animated animate__bounceInDown">
 
           <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
+            <div class="card tamano-grafico ventas-card ocupacion-card card-estadisticas-index">
               <div class="card-body d-flex align-items-center justify-content-between  info-card py-3">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
                   <i class="bi bi-graph-up-arrow"></i>
                 </div>
                 <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
-                    class="text-muted small pt-2">Aumentado</span>
+                  <h6 class="p-0 m-0 titulo-grafico">Ocupacíon</h6>
+                  <span class="text-graficos small pt-1 fw-bold">145</span>
+                  <span class="text-muted small pt-2">Aumentado</span>
                 </div>
               </div>
             </div>
@@ -294,39 +294,39 @@
             <div class="card tamano-grafico ventas-card card-estadisticas-index">
               <div class="card-body d-flex align-items-center justify-content-between info-card py-3 px-3">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
+                  <i class="bi bi-bag"></i>
                 </div>
                 <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
+                  <h6 class="p-0 m-0 titulo-grafico text-truncate">Retiros</h6>
+                  <span class="text-graficos small pt-1 fw-bold">145</span> <span
                     class="text-muted small pt-2">Aumentado</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
+            <div class="card tamano-grafico ventas-card entrega-card card-estadisticas-index">
               <div class="card-body d-flex align-items-center justify-content-between info-card py-3 px-3">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
+                  <i class="bi bi-box-seam"></i>
                 </div>
                 <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
+                  <h6 class="p-0 m-0 titulo-grafico">Entregas</h6>
+                  <span class="text-graficos small pt-1 fw-bold">145</span> <span
                     class="text-muted small pt-2">Aumentado</span>
                 </div>
               </div>
             </div>
           </div>
           <div class="col-sm-12 col-md-3 d-flex justify-content-center">
-            <div class="card tamano-grafico ventas-card card-estadisticas-index">
-              <div class="card-body d-flex align-items-center justify-content-betweeninfo-card py-3 px-3">
+            <div class="card tamano-grafico ventas-card vencer-card card-estadisticas-index">
+              <div class="card-body d-flex align-items-center justify-content-between info-card py-3 px-3">
                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
-                  <i class="bi bi-graph-up-arrow"></i>
+                  <i class="bi bi-alarm"></i>
                 </div>
                 <div class="ps-3 text-truncate">
-                  <h6>145</h6>
-                  <span class="text-success small pt-1 fw-bold">12%</span> <span
+                  <h6 class="p-0 m-0 titulo-grafico">Por Vencer</h6>
+                  <span class="text-graficos small pt-1 fw-bold">145</span> <span
                     class="text-muted small pt-2">Aumentado</span>
                 </div>
               </div>
@@ -340,7 +340,7 @@
     <div class="row paneles-mapa align-items-stretch animate__animated animate__fadeInRight row-paneles-mapa">
       <!-- ======= Estado paneles ======= -->
       <div class="col-sm-12 col-md-4 mb-2 ancho-card">
-        <div class="card w-100 " style="min-height: 434px;">
+        <div class="card w-100 " style="min-height: 35rem;">
           <div class="card-body pt-0">
             <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo"><i class="bi bi-broadcast-pin pe-2"></i>Estado de Paneles
             </h5>
@@ -355,6 +355,12 @@
                   src="assets/img/elementos/paneles-amarillo.svg" alt=""><span
                   class="text-warning texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
+                  src="assets/img/elementos/paneles-amarillo.svg" alt=""><span
+                  class="text-warning texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
+              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
+                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
+                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
+              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
                   src="assets/img/elementos/paneles-verde.svg" alt=""><span
                   class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
@@ -363,6 +369,7 @@
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
                   src="assets/img/elementos/paneles-verde.svg" alt=""><span
                   class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
+
             </ul>
           </div>
         </div>
@@ -370,17 +377,16 @@
 
       <!-- ======= Mapa ======= -->
       <div class="col-sm-12 col-md-8 mb-2  ancho-card">
-        <div class="card w-100 h-100" style="min-height: 434px;">
+        <div class="card w-100 h-100">
           <div class="card-body p-1">
             <!-- <img class="img-fluid w-100 h-100" src="assets/img/elementos/Mapa.svg" alt="" style="height: 431px;"> -->
-            <iframe class="rounded"
+            <iframe class="rounded mapa-locker"
               src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13317.970913666792!2d-70.6576384!3d-33.4364672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2scl!4v1721065609990!5m2!1ses!2scl"
-              width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+              width="100%" height="100%" style="border:0;" allowfullscreen="true" loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <!-- ======= Leyenda Mapa ======= -->
-          <div
-            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-mapa">
+          <div class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-mapa">
             <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
                 src="assets/img/elementos/paneles-rojo.svg" alt="">
               <span class="opacity-50 titulo-sincro">Sin Sincronización</span>
