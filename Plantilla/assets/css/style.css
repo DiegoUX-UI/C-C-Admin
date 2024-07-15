@@ -299,8 +299,7 @@ h6 {
 }
 
 .header-nav .profile .dropdown-item:hover {
-  background-color: #7139ea;
-  color: #FFF;
+  color: #7139ea;
 }
 
 /*--------------------------------------------------------------
@@ -746,7 +745,7 @@ h6 {
 }
 
 .dropdown-menu .dropdown-item:hover {
-  background-color: #f6f9ff;
+  background-color: #faf6ff;
 }
 
 @media (min-width: 768px) {
