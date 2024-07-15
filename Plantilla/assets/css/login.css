@@ -79,9 +79,57 @@ img{
   appearance: none;
   border-radius: 8px;
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  box-shadow: none;
 }
 
 
 .form-label{
   color: #727272 !important;
+}
+
+
+.input-icon-usuario {
+  position: relative;
+}
+.input-icon-usuario > input {
+  padding-left: 2.5rem;
+}
+.input-icon-usuario > .icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+
+
+.input-icon {
+  position: relative;
+}
+.input-icon > input {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.input-icon > .icon-left {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #aaa;
+}
+.input-icon > .icon-right {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #aaa;
+}
+
+.error-message {
+  color: #780303 !important;
+  background: #fdecec !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
 }

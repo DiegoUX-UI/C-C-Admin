@@ -410,6 +410,18 @@ sidebarBtn.addEventListener("click", () => {
 // });
 
 
+// Manejar el cambio de archivo seleccionado
+document.getElementById('fileInput').addEventListener('change', function () {
+  const fileName = this.files[0].name;
+  document.querySelector('.form-control').value = fileName;
+});
+// Manejar el cambio de archivo seleccionado
+document.getElementById('Importar').addEventListener('change', function () {
+  const fileName = this.files[0].name;
+  document.querySelector('.form-control').value = fileName;
+});
+
+
 
 
 

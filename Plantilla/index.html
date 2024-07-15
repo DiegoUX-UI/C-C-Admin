@@ -32,7 +32,7 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- Libreria Animate CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
 
@@ -245,10 +245,25 @@
     <div class="card mt-0 bienvenida">
       <div class="card-body w-100">
         <div class="">
-          <h5 class="card-title"><span>Bienvenido, </span>Nombre Usuario</h5>
+          <h5 class="card-title"><span>Bienvenido, </span><span class="text-white" id="username">Nombre Usuario</span></h5>
           <p class="card-text text-white text-truncate">With supporting text below as a natural lead-in to additional
             content.</p>
         </div>
+
+        <script>
+          // Mostrar mensaje de bienvenida si el usuario ha iniciado sesión correctamente
+          window.addEventListener('DOMContentLoaded', function () {
+            if (localStorage.getItem('loggedIn') === 'true') {
+              const welcomeMessage = document.getElementById('welcomeMessage');
+              const username = localStorage.getItem('username');
+              document.getElementById('username').textContent = username;
+              welcomeMessage.style.display = 'block';
+              // Limpiar el estado de la sesión
+              localStorage.removeItem('loggedIn');
+              localStorage.removeItem('username');
+            }
+          });
+        </script>
 
         <!-- ======= Card Graficos Bienvenida ======= -->
         <div class="row  mt-4 card-graficos animate__animated animate__bounceInDown">
@@ -317,7 +332,7 @@
     <div class="row paneles-mapa align-items-stretch animate__animated animate__fadeInRight">
       <!-- ======= Estado paneles ======= -->
       <div class="col-sm-12 col-md-4 mb-2 ancho-card">
-        <div class="card w-100" style="min-height: 434px;">
+        <div class="card w-100" style="min-height: 482px;">
           <div class="card-body pt-0">
             <h5 class="card-title pt-3 pb-0 mb-0 texto-titulo">Estado de Paneles</h5>
             <ul class="px-2 list-unstyled mt-4">
@@ -339,6 +354,9 @@
               <li class="d-flex align-items-center item-paneles"><img class="pe-3"
                   src="assets/img/elementos/paneles-verde.svg" alt=""><span
                   class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
+              <li class="d-flex align-items-center item-paneles"><img class="pe-3"
+                  src="assets/img/elementos/paneles-verde.svg" alt=""><span
+                  class="text-success texto-panel">Antofagasta, 053 - Plaza Antofagasta</span></li>
             </ul>
           </div>
         </div>
@@ -346,13 +364,13 @@
 
       <!-- ======= Mapa ======= -->
       <div class="col-sm-12 col-md-8  ancho-card">
-        <div class="card w-100" style="min-height: 434px;">
+        <div class="card w-100" style="min-height: 482px;">
           <div class="card-body p-1 pb-0">
             <img class="img-fluid" src="assets/img/elementos/Mapa.svg" alt="" width: 100%">
           </div>
           <!-- ======= Leyenda Mapa ======= -->
           <div
-            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-locker bg-light">
+            class="card-footer text-muted d-flex justify-content-center align-items-center p-3  w-auto leyenda-mapa bg-light">
             <div class="sin-sincron d-flex align-items-center"><img class="pe-2"
                 src="assets/img/elementos/paneles-rojo.svg" alt="">
               <span class="opacity-50 titulo-sincro">Sin Sincronización</span>
@@ -369,7 +387,7 @@
     </div>
 
     <!-- ======= Graficos ======= -->
-    <div class="row animate__animated animate__fadeInLeft">
+    <div class="row animate__animated animate__fadeInLeft mt-2">
 
       <!-- ======= Graficos Distribución de Retiros ======= -->
       <div class="col-md-6 mt-4">

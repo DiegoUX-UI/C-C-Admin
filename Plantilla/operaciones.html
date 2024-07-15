@@ -354,15 +354,17 @@
             </div>
             <div class="row mt-4">
               <div class="col-md-4">
-                <a class="btn btn-primary btn-individual me-2" href="#" data-bs-toggle="modal"
-                  data-bs-target="#modalIndividual"><i class="bi bi-filetype-xls pe-2"></i>Descarga modelo xls</a>
+                <a class="btn btn-primary btn-individual me-2" href="#"><i class="bi bi-filetype-xls pe-2"></i>Descarga
+                  modelo xls</a>
               </div>
               <div class="col-md-8">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Archivo xls" aria-label="Recipient's username"
-                    aria-describedby="button-addon2">
-                  <a class="btn btn-primary btn-importar" href="#" id="button-addon2"><i
-                      class="bi bi-cloud-download pe-2"></i>Importar</a>
+                  <input type="text" class="form-control" value="Sin Archivos Seleccionados"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" readonly>
+                  <label for="fileInput" class="btn btn-primary btn-importar">
+                    <i class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar
+                    <input type="file" id="fileInput" class="d-none">
+                  </label>
                 </div>
               </div>
             </div>
@@ -409,7 +411,8 @@
                       data-bs-target="#validoC-operacion"><i class="bi bi-slash-circle pe-2"></i>Cancelar
                       Operaciones</a>
 
-                    <a class="btn btn-primary btn-agregari" href="#" id="agregar-ingreso"><i class="bi bi-plus-lg pe-2"></i>Agregar Ingreso</a>
+                    <a class="btn btn-primary btn-agregari" href="#" id="agregar-ingreso"><i
+                        class="bi bi-plus-lg pe-2"></i>Agregar Ingreso</a>
                   </div>
                 </div>
 
@@ -482,7 +485,7 @@
               data-bs-parent="#filtros">
               <div class="accordion-body ">
                 <div class="filtros d-flex">
-                  <form class="row g-4">
+                  <form class="row  justify-content-center">
                     <div class="col-md-3">
                       <label for="input" class="form-label">Fecha Desde:</label>
                       <input type="date" class="form-control opacity-75 shadow-sm bg-light" id="inputF-desde">
@@ -520,7 +523,7 @@
                         <option>...</option>
                       </select>
                     </div>
-                    <div class="col-md-3 mt-3 d-flex align-items-end justify-content-between">
+                    <div class="col-md-3 mt-3 d-flex align-items-end justify-content-between ">
                       <a class="btn btn-primary btn-individual me-2 w-50" href=""><i
                           class="bi bi-dash-circle pe-2"></i>Borrar</a>
                       <a class="btn btn-primary btn-importar w-50" href=""><i class="bi bi-filter pe-2"></i>Filtrar</a>
@@ -643,10 +646,12 @@
             </div>
             <div class="d-flex justify-content-center px-5">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="Archivo xls" aria-label="Recipient's username"
-                  aria-describedby="button-addon2">
-                <a class="btn btn-primary btn-importar" href="#" id="button-addon2"><i
-                    class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar</a>
+                <input type="text" class="form-control" value="Sin Archivos Seleccionados"
+                  aria-label="Recipient's username" aria-describedby="button-addon2" readonly>
+                <label for="fileInput" class="btn btn-primary btn-importar">
+                  <i class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar
+                  <input type="file" id="fileInput" class="d-none">
+                </label>
               </div>
             </div>
           </div>
@@ -960,7 +965,7 @@
         }, 2000);
       });
     </script>
-    
+
     <script>
       document.getElementById('Exportar').addEventListener('click', function () {
         var toastEl = document.getElementById('toastExportar');

@@ -1795,6 +1795,16 @@ h6 {
   }
 }
 
+.bi-arrow-repeat{
+  color: #000000 !important;
+}
+.bi-arrow-repeat:hover{
+  color: #0D6EFD !important;
+}
+.bi-eye:hover{
+  color: #0D6EFD !important;
+}
+
 /*--------------------------------------------------------------
 # Ver Lockers 
 --------------------------------------------------------------*/
@@ -1992,6 +2002,13 @@ th {
   padding-top: .2rem;
 }
 
+.pie-chart .apexcharts-legend {
+  display: flex;
+  overflow: auto;
+  padding: 0 10px;
+  inset: auto 0px 0px;
+}
+
 /*--------------------------------------------------------------
 # Multimedia
 --------------------------------------------------------------*/
@@ -2000,3 +2017,14 @@ th {
   font-size: 14px;
   color: #7239EA;
 }
+
+.bi-info-circle:hover{
+  color: #0D6EFD !important;
+}
+
+
+
+
+
+
+

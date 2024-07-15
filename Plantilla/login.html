@@ -12,6 +12,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/login.css">
 
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 <body>
   <div class="container-fluid contenedor">
     <div class="row d-flex d-flex justify-content-center w-100">
@@ -23,21 +27,73 @@
             </div>
             <!-- ======= Formulario ======= -->
             <form class="pt-3 h-100 px-5" id="loginForm">
-              <!-- Correo -->
+              <!-- Usuario -->
               <div class="mb-4">
-                <label for="InputCorreo" class="form-label">Correo:</label>
-                <input type="email" class="form-control" id="InputCorreo" aria-describedby="emailHelp" placeholder="Usuario">
+                <label for="InputUsuario" class="form-label">Usuario:</label>
+                <div class="input-icon-usuario">
+                  <i class="fas fa-user icon"></i>
+                  <input type="text" class="form-control" id="InputUsuario" aria-describedby="emailHelp"
+                    placeholder="Usuario" required>
+                </div>
               </div>
               <!-- Contraseña -->
-              <div class="mb-5">
+              <div class="mb-4">
                 <label for="InputContrasena" class="form-label">Contraseña:</label>
-                <input type="password" class="form-control" id="InputContrasena" placeholder="Contraseña">
+                <div class="input-icon">
+                  <i class="fas fa-lock icon-left"></i>
+                  <input type="password" class="form-control" id="InputContrasena" placeholder="Contraseña" required>
+                  <i class="fas fa-eye icon-right" id="togglePassword"></i>
+                </div>
               </div>
-              
+
               <div class="boton text-center mt-5">
-                <a href="index.html" type="submit" class="btn btn-ingresar w-100">Ingresar</a>
+                <button type="submit" class="btn btn-ingresar w-100">Ingresar</button>
+              </div>
+
+              <!-- Mensaje de error -->
+              <div class="error-message mt-4 text-center fw-medium" id="errorMessage">Usuario y/o contraseña incorrectos
+              </div>
+              <div class="error-message mt-4 text-center fw-medium" id="emptyFieldsMessage">Los campos están vacíos
               </div>
             </form>
+
+            <script>
+              // Mostrar y ocultar contraseña
+              document.getElementById('togglePassword').addEventListener('click', function (e) {
+                  const passwordInput = document.getElementById('InputContrasena');
+                  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+                  passwordInput.setAttribute('type', type);
+                  this.classList.toggle('fa-eye');
+                  this.classList.toggle('fa-eye-slash');
+              });
+      
+              // Validar formulario
+              document.getElementById('loginForm').addEventListener('submit', function (e) {
+                  e.preventDefault();
+                  const usuario = document.getElementById('InputUsuario').value;
+                  const contrasena = document.getElementById('InputContrasena').value;
+                  const errorMessage = document.getElementById('errorMessage');
+                  const emptyFieldsMessage = document.getElementById('emptyFieldsMessage');
+      
+                  // Ocultar mensajes de error al inicio
+                  errorMessage.style.display = 'none';
+                  emptyFieldsMessage.style.display = 'none';
+      
+                  if (!usuario || !contrasena) {
+                      // Mostrar mensaje de campos vacíos si no se completaron ambos campos
+                      emptyFieldsMessage.style.display = 'block';
+                  } else if (usuario === 'DTS' && contrasena === '1234') {
+                      // Guardar el estado de la sesión y el nombre de usuario en localStorage
+                      localStorage.setItem('loggedIn', 'true');
+                      localStorage.setItem('username', usuario);
+                      // Redirigir al usuario a otra página si el inicio de sesión es correcto
+                      window.location.href = 'index.html';
+                  } else {
+                      // Mostrar mensaje de error si el inicio de sesión es incorrecto
+                      errorMessage.style.display = 'block';
+                  }
+              });
+          </script>
 
           </div>
         </div>
@@ -48,17 +104,10 @@
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer fixed-bottom bg-transparent shadow-lg py-3 px-4">
     <div class="copyright text-truncate d-flex align-items-center justify-content-end">
-      <span class="me-2 text-white-50">Powered by</span> <img class="img-fluid" src="assets/img/logos/Logo DTS-white (1).png" alt=""
-        width="60px">
+      <span class="me-2 text-white-50">Powered by</span> <img class="img-fluid"
+        src="assets/img/logos/Logo DTS-white (1).png" alt="" width="60px">
     </div>
   </footer><!-- Fin Footer -->
-
-  
-
-
-
-
-
 
   <script src="mostrar.js" type="text/javascript" charset="utf-8" async defer></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js"></script>
