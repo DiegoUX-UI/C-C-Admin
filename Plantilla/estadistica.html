@@ -291,7 +291,7 @@
                   <div class=" mt-3 d-flex align-items-end justify-content-between">
                     <a class="btn btn-primary btn-individual me-2 " href=""><i
                         class="bi bi-dash-circle pe-2"></i>Borrar</a>
-                    <a class="btn btn-primary btn-importar " href=""><i
+                    <a class="btn btn-primary btn-importar " href="#" data-bs-toggle="modal" data-bs-target="#importar-plantilla"><i
                         class="bi bi-cloud-download pe-2"></i>Importar</a>
                   </div>
                 </div>
@@ -598,12 +598,52 @@
           </div>
         </div>
       </div>
-
-
     </div>
 
 
+    <!-- //******** Modal  ********\\  -->
 
+    <!-- *** Modal Importar *** -->
+    <div class="modal fade" id="importar-plantilla" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Importar</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-4 py-2">
+            <div class="my-3">
+              <h5 class="my-2">Atención</h5>
+              <p class="opacity-50 texto-modal">Los archivos deben ser importados cumpliendo con el formato
+                requerido.</p>
+            </div>
+            <div class="row mt-4">
+              <!-- <div class="col-md-4">
+                <a class="btn btn-primary btn-individual me-2" href="#"><i class="bi bi-filetype-xls pe-2"></i>Descarga
+                  modelo xls</a>
+              </div> -->
+              <div class="col-md-12">
+                <!-- <div class="input-group mb-3">
+                  <input type="text" class="form-control opacity-50" value="Sin Archivos Seleccionados"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" readonly>
+                  <label for="fileInput" class="btn btn-primary btn-importar">
+                    <i class="bi bi-file-earmark-arrow-up pe-2"></i>Cargar
+                    <input type="file" id="fileInput" class="d-none">
+                  </label>
+                </div> -->
+                <input type="file" class="form-control" value="Sin Archivos Seleccionados"
+                    aria-label="Recipient's username" aria-describedby="button-addon2" readonly>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer mt-3">
+            <button type="button" class="btn btn-secondary btn-Mindividual" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary btn-Magregar">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   </main><!-- Fin #main -->
 
