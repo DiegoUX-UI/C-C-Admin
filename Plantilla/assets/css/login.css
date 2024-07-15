@@ -133,3 +133,10 @@ img{
   border-radius: 10px;
   display: none;
 }
+.vacio-message {
+  color: #0a0a0a !important;
+  background: #F7F7F7 !important;
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+}
