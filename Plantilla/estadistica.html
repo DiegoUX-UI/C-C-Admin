@@ -209,6 +209,36 @@
           <li><a href="#">Box Icons</a></li> -->
         </ul>
       </li>
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="adminUsuarios.html">
+            <i class="bi bi-person-gear"></i>
+            <span class="link_name">Usuarios</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="adminUsuarios.html">Usuarios</a></li>
+          <!-- <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li> -->
+        </ul>
+      </li>
+      <li class="item ">
+        <div class="iocn-link">
+          <a href="estados.html">
+            <i class="bi bi-arrow-repeat"></i>
+            <span class="link_name">Cambios de Estado</span>
+          </a>
+          <!-- <i class='bx bxs-chevron-down arrow'></i> -->
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="estados.html">Cambios de Estado</a></li>
+          <!-- <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li> -->
+        </ul>
+      </li>
       <hr class="mx-2">
       <li class="item ">
         <div class="iocn-link">
@@ -314,12 +344,12 @@
 
 
     <!-- ======= Graficos ======= -->
-    <div class="row ">
+    <div class="row graficos-row">
       <!-- ======= Grafico Distribución de Retiros ======= -->
-      <div class="col-md-8 mt-4">
+      <div class="col-md-8 mt-4 grafico">
         <div class="card card-reportes">
 
-          <div class="card-body" style="min-height: 420px;">
+          <div class="card-body" >
             <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-box-seam pe-2"></i>Distribución de retiros
             </h5>
 
@@ -338,7 +368,7 @@
                   }],
                   chart: {
                     type: 'bar',
-                    height: 350,
+                    height: 265,
                     toolbar: false
                   },
                   plotOptions: {
@@ -400,8 +430,8 @@
       </div>
 
       <!-- ======= Grafico Ocupación ======= -->
-      <div class="col-md-4 mt-4">
-        <div class="card" style="min-height: 420px;">
+      <div class="col-md-4 mt-4 grafico">
+        <div class="card" >
 
           <div class="card-body">
             <h5 class="card-title pt-0 mb-0  texto-titulo"><i class="bi bi-pie-chart pe-2"></i>Ocupación
@@ -414,13 +444,13 @@
                   new ApexCharts(document.querySelector("#donutChart"), {
                     series: [44, 55,],
                     chart: {
-                      height: 300,
+                      height: 220,
                       type: 'donut',
                       toolbar: {
                         show: false
                       }
                     },
-                    labels: ['Team A', 'Team B'],
+                    labels: ['Dato 1', 'Dato 2'],
                     legend: {
                       position: 'left', // Coloca la leyenda debajo del gráfico
                       horizontalAlign: 'start', // Alinea la leyenda horizontalmente en el centro
@@ -436,7 +466,7 @@
       </div>
 
       <!-- ======= Grafico Operaciones Entregadas Por Tamaño ======= -->
-      <div class="col-md-5 mt-4">
+      <div class="col-md-5 mt-4 grafico">
         <div class="card card-reportes">
 
           <div class="card-body" style="min-height: 420px;">
@@ -457,7 +487,7 @@
                   }],
                   chart: {
                     type: 'bar',
-                    height: 350,
+                    height: 265,
                     toolbar: false,
                   },
                   plotOptions: {
@@ -526,8 +556,8 @@
       </div>
 
       <!-- ======= Grafico Distribución de la Demora ======= -->
-      <div class="col-md-3 mt-4">
-        <div class="card" style="min-height: 420px;">
+      <div class="col-md-3 mt-4 grafico">
+        <div class="card">
           <div class="card-body pb-0">
             <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-clock-history pe-2"></i>Distribución de la
               Demora</h5>
@@ -541,7 +571,7 @@
                 new ApexCharts(document.querySelector("#pieChart"), {
                   series: [44, 55, 13, 43, 22],
                   chart: {
-                    height: 370,
+                    height: 270,
                     type: 'pie',
                     toolbar: {
                       show: false
@@ -568,16 +598,16 @@
       </div>
 
       <!-- ======= Grafico Tiempo Promedio ======= -->
-      <div class="col-md-4 mt-4">
-        <div class="card" style="min-height: 420px;">
+      <div class="col-md-4 mt-4 grafico">
+        <div class="card card-tiempo">
           <div class="card-body">
             <h5 class="card-title pt-0  mb-0 texto-titulo"><i class="bi bi-clock pe-2"></i>Tiempo Promedio</h5>
             <h6 class="opacity-25 subtitulo-grafico">Entrega y Demora</h6>
-            <div class="row px-2 mt-5 d-flex  align-items-center " style="min-height: 250px;">
+            <div class="row px-2 d-flex  align-items-center  row-tiempo" style="min-height: 250px;">
 
               <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="text-center w-75">Pendientes de entrega</h6>
-                <img src="assets/img/elementos/entrega.svg" alt="">
+                <img src="assets/img/elementos/entrega.svg" alt="" style="width: 4vw;">
                 <div class="mt-2 entrega p-2 rounded fw-medium">00:02:13</div>
               </div>
 
@@ -588,7 +618,7 @@
 
               <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
                 <h6 class="text-center w-75">Pendientes de retiro</h6>
-                <img src="assets/img/elementos/fluent_shopping-bag-pause-24-regular.svg" alt="">
+                <img src="assets/img/elementos/fluent_shopping-bag-pause-24-regular.svg" alt="" style="width: 4vw;">
                 <div class="mt-2 retiro p-2 rounded fw-medium">00:02:13</div>
               </div>
 
