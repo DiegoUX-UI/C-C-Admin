@@ -273,7 +273,13 @@
         <div class="card" style="min-height: auto">
           <div class="card-body">
             <div class="mb-3">
-              <h5 class="m-0"><i class="bi bi-card-list pe-2"></i>Operación #130443</h5>
+              <h5 class="m-0"></h5>
+
+              <div class="d-flex align-items-center">
+                <a class="btn btn-individual  me-3 " href="locker.html"><i class="bi bi-arrow-left pe-2"></i>Volver</a>
+                <i class="bi bi-card-list pe-2"></i><span
+                  class="fw-medium titulo-ingresos">Operación #130443</span>
+              </div>
               <!-- <img src="assets/img/elementos/morada-titulo.svg" alt=""> -->
             </div>
             <div class="operaciones-menu">
@@ -296,7 +302,7 @@
                 Datos de la operación
               </div>
 
-              <div class="row mt-3 bg-light mx-auto">
+              <div class="row mt-3 bg-light mx-auto rounded">
                 <div class="col-md-6 lista-datos">
                   <ul class="list-group list-group-horizontal">
                     <li class="list-group-item">
@@ -440,7 +446,7 @@
                 </div>
               </div>
 
-              <div class=" mt-3 fs-6" id="#codigos">
+              <div class=" mt-4 fs-6" id="#codigos">
                 Códigos de la operación
               </div>
 
@@ -479,17 +485,20 @@
                 </div>
               </div>
 
-              <div class="accordion animate__animated animate__bounceInLeft mt-4" id="accordionExample">
+              <div class="accordion accordion-flush mt-4" id="accordionFlushExample">
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
-                    <button class="accordion-button bg-light text-black" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                       <i class="bi bi-arrow-left-right pe-2"></i>Historial de movimientos
                     </button>
                   </h2>
-                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body px-0">
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
                       <div class="table-responsive p-0 pb-0 tabla-ver-locker">
-                        <table class="table table-borderless table-hover  table-striped  align-middle tabla-operacion pb-0">
+                        <table
+                          class="table table-borderless table-hover  table-striped  align-middle tabla-operacion pb-0">
                           <thead class="border-bottom">
                             <tr>
                               <th class="text-start" scope="col">Fecha</th>
@@ -520,17 +529,19 @@
                   </div>
                 </div>
                 <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed text-black" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                       <i class="bi bi-bell pe-2"></i>Historial de alertas
                     </button>
                   </h2>
-                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    
-                    <div class="accordion-body px-0">
-                      <!-- ======= Table Historial de Movimientos ======= -->
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+
                       <div class="table-responsive p-0 pb-0 tabla-ver-locker">
-                        <table class="table table-borderless table-hover  table-striped  align-middle tabla-operacion pb-0">
+                        <table
+                          class="table table-borderless table-hover  table-striped  align-middle tabla-operacion pb-0">
                           <thead class="border-bottom">
                             <tr>
                               <th class="text-start" scope="col">Asunto</th>
@@ -560,129 +571,126 @@
     </div>
 
     <!-- *** Modal Generar QR *** -->
-    <div class="modal fade" id="QR" tabindex="-1" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered  modal-xl">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Generar QR</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-            aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="overflow-auto" style="max-height: 30rem;">
-            <div class="row text-center mx-auto ">
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+    <div class="modal fade" id="QR" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered  modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Generar QR</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="overflow-auto" style="max-height: 30rem;">
+              <div class="row text-center mx-auto ">
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column justify-content-center info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-retiro.svg"
-                      alt=""><span class="qr-retiro text-start">(Retiro)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column justify-content-center info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-retiro.svg" alt=""><span
+                        class="qr-retiro text-start">(Retiro)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-md-4 p-2">
-                <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
-                <div class="px-4 d-flex flex-column info-qr">
-                  <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
-                  <div class="">Panel: <span class="ms-2">049 Villa</span></div>
-                  <div class="d-flex align-items-center justify-content-center"><img
-                      class="svg-P-entrega pe-1" src="assets/img/elementos/pendiente-entrega.svg"
-                      alt=""><span class="qr-entrega text-start">(Entrega)</span></div>
-                  <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                <div class="col-md-4 p-2">
+                  <img class="qr-imagen" src="assets/img/elementos/codigo-qr.svg" alt="">
+                  <div class="px-4 d-flex flex-column info-qr">
+                    <div class="">ID: <span class="opacity-50 ms-2">130728</span></div>
+                    <div class="">Panel: <span class="ms-2">049 Villa</span></div>
+                    <div class="d-flex align-items-center justify-content-center"><img class="svg-P-entrega pe-1"
+                        src="assets/img/elementos/pendiente-entrega.svg" alt=""><span
+                        class="qr-entrega text-start">(Entrega)</span></div>
+                    <div><span class="qr-nguia">2Y4HQDBDWLI6</span></div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary btn-Mindividual"
-            data-bs-dismiss="modal">Cancelar</button>
-          <button type="button" class="btn btn-primary btn-Magregar">Imprimir</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-Mindividual" data-bs-dismiss="modal">Cancelar</button>
+            <button type="button" class="btn btn-primary btn-Magregar">Imprimir</button>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
 
   </main><!-- Fin #main -->
