@@ -2152,5 +2152,46 @@ th {
   transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
+.list-group{
+  justify-content: space-between;
+}
+.list-group-item{
+  border: none;
+  font-size: 12px;
+  background: transparent;
+}
+.resultado{
+  width: auto;
+  color: #708191;
+  overflow: hidden;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.operaciones-menu{
+  font-size: 12px;
+}
+
+.operaciones-menu .active{
+  color: #7C2B87 !important;
+  border-bottom: 1px solid #7C2B87 !important;
+}
+.operaciones-menu:focus{
+  color: #7C2B87 !important;
+  border-bottom: 1px solid #7C2B87 !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+  isolation: isolate;
+  border-color:transparent;
+}
 
 
+@media (max-width: 992px) {
+  .row .lista-datos{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
